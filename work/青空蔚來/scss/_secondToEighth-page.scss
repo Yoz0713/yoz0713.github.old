@@ -1,0 +1,354 @@
+.second-wrap{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    .second-page{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-image: url(../img/青空蔚來img/img/second-page.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+       z-index: -10;
+    }
+}
+.third-wrap{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: -10;
+    border-top: 5px solid #00A2B9;
+    border-bottom: 5px solid #00A2B9;
+    .third-page{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-image: url(../img/青空蔚來img/img/third-page.jpg);
+        background-repeat: repeat;
+        background-size: 20% 20%;
+        padding-left: 125px;
+    }
+    img{
+        width: 50%;
+        height: 85%;
+      
+    }
+    .third-textbox{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        transform: translateX(150px);
+        .land{
+            width: 40%;
+        }
+        h3{
+            margin: 30px 0;
+            font-size: 3rem;
+            font-weight: 900;
+            color: rgb(89,87,87);
+            position: relative;
+            img{
+                position: absolute;
+                top: -120px;
+                right: -150px;
+                animation-name: updown;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+        }
+        p{
+            color:rgb(89,87,87) ;
+            font-size: 1.2rem;
+            letter-spacing: 0.4rem;
+        }
+    }
+
+}
+.forth-wrap{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .forth-page{
+        height: 100vh;
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        background-image: url(https://ws.srl.tw/cs/2022032516281868/img/img2022032812405454.webp);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+       z-index: -10;
+       p{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(50px,-30px);
+        font-size: 0.9rem;
+        color: rgb(44, 43, 43);
+        font-weight: 700;
+       }
+    }
+}
+.fifth-wrap{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .fifth-page{
+        height: 100vh;
+        width: 80%;
+        position: absolute;
+        bottom: 0;
+        background-image: url(../img/青空蔚來img/img/fifth-page.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: -10;
+       p{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(50px,-30px);
+        font-size: 0.9rem;
+        color: rgb(89,87,87);
+        font-weight: 700;
+       }
+    }
+}
+.sixth-wrap{
+    width: 100%;
+    height: 100vh;
+    
+    .sixth-page{
+        width: 100%;
+        padding: 40px 8%;
+        display: flex;
+        align-items: center;
+        background-image: url(../img/青空蔚來img/img/third-page.jpg);
+        background-repeat: repeat;
+        background-size: 20% 20%;
+        height:100%;
+        border-top: 5px solid #00A2B9;
+        border-bottom: 5px solid #00A2B9;
+        .sixth-carousel{
+            width: 60%;
+            position: relative;
+           
+            .carousel-caption{
+                position: absolute;
+                right: -60%;
+                bottom: 5px;
+                margin: 0;
+                padding: 0;
+                height: 1.2rem;
+                font-size: 0.8rem;
+            }
+        }
+        .sixth-page-box{
+            width: 40%;
+            transform: translateX(20%);
+            .sixth-page-textbox{
+                
+                img{
+                    width: 40%;
+                    padding: 20px 0;
+                }
+                h2{
+                    position: relative;
+                    padding: 20px 0;
+                    color: rgb(89,87,87);
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                    img{
+                        position: absolute;
+                        width: 50%;
+                        top: -250px;
+                        right: 0px;
+                        animation-name: updown;
+                        animation-duration: 3s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                    }
+                }
+                p{
+                    color: rgb(89,87,87);
+                    line-height: 2.2rem;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                }
+            }
+           
+        }
+    }
+}
+@keyframes updown{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-20px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    75%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.seventh-wrap{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    .seventh-page{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-image: url(../img/青空蔚來img/img/seventh-page.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        z-index: -10;
+    }
+}
+
+.eighth-wrap{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    .eighth-page{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        background-image: url(../img/青空蔚來img/img/third-page.jpg);
+        background-repeat: repeat;
+        background-size: 20% 20%;
+        z-index: -10;
+        display: flex;
+        padding: 5%;
+        &-left{
+            width: 40%;
+            margin-left:5% ;
+            display: flex;
+            flex-direction: column;
+            color: rgb(89,87,87);
+            justify-content: center;
+            img{
+                width: 50%;
+                margin: 20px 0;
+            }
+            h2{
+                margin: 20px 0;
+                font-size: 2.5rem;
+                font-weight: 900;
+            }
+            p{
+                font-size: 1.2rem;
+                font-weight: 500;
+                line-height: 2rem;
+                margin-top: 20px;
+            }
+        }
+        &-right{
+            width: 70%;
+           
+            .eighth-carousel{
+                width: 100%;
+                
+                position: relative;
+               
+                .carousel-caption{
+                    position: absolute;
+                    right: -60%;
+                    bottom: 5px;
+                    margin: 0;
+                    padding: 0;
+                    height: 1.2rem;
+                    font-size: 0.8rem;
+                    p{  
+                        position: absolute;
+                        width: fit-content;
+                        background-color: #ccc;
+                        right: 41.5%;
+                        bottom: -20px;
+                    }
+                }
+        }
+    }
+    }
+}
+.p2-page{
+    display: none;
+}
+@media all and (max-width:935px){
+
+    .second-wrap{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        .second-page{
+            height: 100%;
+            width: 100%;
+            background-image: url(../img/青空蔚來img/img/third-page.jpg);
+            background-repeat: repeat;
+            background-size: 20% 20%;
+            z-index: -10;
+            padding: 70px 100px;
+            .p2-page{
+                display: block;
+                .future{
+                    width: 50%;
+                    margin-bottom: 50px;
+                }
+                h2{
+                    margin-bottom: 50px;
+                    ;
+                    color: rgb(89,87,87);
+                    font-weight: 700;
+                    font-size: 2.5rem;
+                }
+                p{
+                    color: rgb(89,87,87);
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    line-height: 2rem;
+                    margin-bottom: 50px;
+                }
+                .p2-grid{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr 1fr;
+                    row-gap: 15px;
+                    column-gap: 15px;
+                    border-radius: 20px;
+                    img{
+                        width: 100%;
+                       
+                    }
+                    .grid1{
+                        grid-column: 1/3;
+                        
+                    }
+                    .grid2{
+                        width: 100%;
+                      
+                    }
+                    .grid3{
+                        width: 100%;
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "header&phoneMenu";
+@import "first-page";
+@import "secondToEighth-page";
+@import "nineth&tenth-page";
+@import "eleventh-page";
+@import "form&footer-page";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+@keyframes left {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+}
