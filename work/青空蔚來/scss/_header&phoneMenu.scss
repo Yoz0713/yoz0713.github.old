@@ -1,6 +1,6 @@
 header{
     display: flex;
-    width: 100%;
+    width:100vw;
     position: fixed;
     align-items: center;
     height: 80px;
@@ -68,6 +68,13 @@ header{
 .footer-menu{
     display: none;
 }
+.menu-wrap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
 
 @media all and (max-width:935px){
     header{
@@ -91,7 +98,7 @@ header{
         .bars-menu{
             display: none;
             width: 100%;
-            height: 90%;
+            height: 90vh;
             position: fixed;
             background-color: #00A2B9;
             z-index: 10;
@@ -129,9 +136,10 @@ header{
             position: fixed;
             bottom: 0;
             left: 0;
-            width: 100%;
+            width:100vw;
             height: 60px;
             background-color: #00A2B9;
+            z-index: 100;
             ul{
                 width: 100%;
                 display: flex;
@@ -146,12 +154,14 @@ header{
             }
             
         }
-    }
+        .toggle-menu:checked ~ .bars-menu{
+            display:block;
+            transition: all 0.5s;
+            opacity: 1;
+            
+        }
+     
+}
    
 
-    .toggle-menu:checked ~ .bars-menu{
-        display:block;
-        transition: all 0.5s;
-        opacity: 1;
-        
-    }
+
