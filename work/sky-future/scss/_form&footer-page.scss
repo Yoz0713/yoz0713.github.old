@@ -1,6 +1,6 @@
 .form-wrap{
     position: relative;
-    height: 1250px;
+    height: 1300px;
     width: 100%;
     padding: 50px 0;
     background-color: #00A2B9;
@@ -100,7 +100,7 @@ textarea{
 }
 @media all and (max-width:420px){
     #footer{
-        transform: translateY(-60px);
+        transform: translateY(-120px);
         font-size: 0.5rem;
         padding: 10px;
         height: 75px;
@@ -118,10 +118,13 @@ textarea{
                     width: 70%;
                     .service-center-mail{
                         font-size: 1.4rem;
-                        transform: translateY(-100%);
+                        transform: translateY(-150px);
                     }
                 }
             }
         }
+    }
+    .submit{
+        transform: translateY(-65px);
     }
 }
