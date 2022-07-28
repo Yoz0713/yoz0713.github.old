@@ -18,9 +18,7 @@ h2,h3{
 p{
     font-size: 17px;
 }
-html{
-    overflow-x: hidden;
-}
+
 html,body{
     min-width: 375px;
     width: 100vw;
@@ -35,9 +33,7 @@ html,body{
     h2,h3{
        font-size:2rem;
     }
-    p{
-        
-    }
+    
     @media all and (max-width:420px){
 
     }
