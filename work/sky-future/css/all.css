@@ -53,6 +53,7 @@ header .fa-bars {
 
 .bars-menu {
   display: none;
+  width: 100vw;
 }
 
 .footer-menu {
@@ -86,7 +87,7 @@ header .fa-bars {
   }
   .bars-menu {
     display: none;
-    width: 100%;
+    width: 100vw;
     height: 90vh;
     position: fixed;
     background-color: #00A2B9;
@@ -420,10 +421,16 @@ header .fa-bars {
   color: rgb(89, 87, 87);
   position: relative;
 }
-.third-wrap .third-textbox h3 img {
+.third-wrap .third-textbox p {
+  color: rgb(89, 87, 87);
+  letter-spacing: 0.4rem;
+}
+.third-wrap .third-textbox .bird3 {
   position: absolute;
   top: -120px;
-  right: -150px;
+  width: 30%;
+  height: 50%;
+  right: 100px;
   -webkit-animation-name: updown;
           animation-name: updown;
   -webkit-animation-duration: 5s;
@@ -432,10 +439,6 @@ header .fa-bars {
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-}
-.third-wrap .third-textbox p {
-  color: rgb(89, 87, 87);
-  letter-spacing: 0.4rem;
 }
 
 .forth-wrap {
@@ -727,6 +730,7 @@ header .fa-bars {
   }
   .second-wrap .second-page .p2-page .map {
     width: 100%;
+    transform: translateX(-2%);
   }
   .third-wrap {
     position: relative;
@@ -761,12 +765,16 @@ header .fa-bars {
     color: rgb(89, 87, 87);
     position: relative;
   }
-  .third-wrap .third-textbox h3 img {
-    width: 50%;
-    height: 100%;
+  .third-wrap .third-textbox p {
+    color: rgb(89, 87, 87);
+    letter-spacing: 0.4rem;
+  }
+  .third-wrap .third-textbox .bird3 {
+    width: 30%;
+    height: 70%;
     position: absolute;
-    top: -100px;
-    right: -230px;
+    top: 0;
+    right: 45px;
     -webkit-animation-name: updown;
             animation-name: updown;
     -webkit-animation-duration: 5s;
@@ -775,10 +783,6 @@ header .fa-bars {
             animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
-  }
-  .third-wrap .third-textbox p {
-    color: rgb(89, 87, 87);
-    letter-spacing: 0.4rem;
   }
   .forth-wrap {
     height: 800px;
@@ -848,14 +852,17 @@ header .fa-bars {
   .seventh-wrap {
     height: 600px;
   }
+  .eighth-wrap {
+    width: 100vw;
+  }
   .eighth-wrap .eighth-page {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     padding: 0;
   }
   .eighth-wrap .eighth-page-left {
-    width: 100%;
-    margin: 30px 60px;
+    width: 100vw;
     border-bottom: 5px solid #00A2B9;
     display: flex;
     flex-direction: column;
@@ -917,14 +924,14 @@ header .fa-bars {
     margin-bottom: 30px;
     font-weight: 900;
   }
-  .third-wrap .third-textbox h3 img {
-    width: 70%;
-    height: 140%;
-    right: -120px;
-  }
   .third-wrap .third-textbox p {
     color: rgb(89, 87, 87);
     letter-spacing: 0.4rem;
+  }
+  .third-wrap .third-textbox .bird3 {
+    right: 20px;
+    width: 20%;
+    height: 30%;
   }
   .forth-wrap {
     height: 475px;
@@ -1416,6 +1423,10 @@ p {
   font-size: 17px;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 html, body {
   min-width: 375px;
   width: 100vw;
@@ -1427,10 +1438,7 @@ html, body {
 
 @media all and (max-width: 935px) {
   h2, h3 {
-    font-size: 1.8rem;
-  }
-  p {
-    font-size: 15px;
+    font-size: 2rem;
   }
 }
 @-webkit-keyframes left {

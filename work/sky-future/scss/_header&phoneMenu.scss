@@ -63,7 +63,8 @@ header{
 }
 .bars-menu{
     display: none;
-
+    width: 100vw;
+    
 }
 .footer-menu{
     display: none;
@@ -97,7 +98,7 @@ header{
         
         .bars-menu{
             display: none;
-            width: 100%;
+            width: 100vw;
             height: 90vh;
             position: fixed;
             background-color: #00A2B9;
