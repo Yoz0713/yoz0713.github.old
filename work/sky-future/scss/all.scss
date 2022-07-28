@@ -11,6 +11,12 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+h2,h3{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 17px;
+}
 html,body{
     min-width: 375px;
     width: 100vw;
@@ -18,6 +24,18 @@ html,body{
     margin: 0;
     padding: 0;
     height: 100vh;
+}
+
+@media all and (max-width:935px){
+    h2,h3{
+       font-size:1.8rem;
+    }
+    p{
+        font-size: 15px;
+    }
+    @media all and (max-width:420px){
+
+    }
 }
 @keyframes left {
     0%{
