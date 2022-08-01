@@ -143,8 +143,8 @@
 .forth-page-top-text {
   position: absolute;
   width: 65%;
-  bottom: 8%;
-  left: 30%;
+  bottom: 3%;
+  left: 26%;
 }
 .forth-page-bottom {
   width: 100%;
@@ -169,6 +169,7 @@
 }
 .fifth-page-top h2 {
   position: absolute;
+  height: 100%;
   left: 15%;
   top: 0;
   -ms-writing-mode: tb-lr;
