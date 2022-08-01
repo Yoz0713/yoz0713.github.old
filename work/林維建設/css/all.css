@@ -68,9 +68,9 @@
 }
 .second-page-top-text {
   position: absolute;
-  bottom: 8%;
-  width: 60%;
-  right: 4%;
+  bottom: 4%;
+  width: 65%;
+  right: 2%;
 }
 .second-page-bottom {
   color: rgb(178, 130, 71);
@@ -143,7 +143,7 @@
 .forth-page-top-text {
   position: absolute;
   width: 65%;
-  bottom: 12%;
+  bottom: 8%;
   left: 30%;
 }
 .forth-page-bottom {
