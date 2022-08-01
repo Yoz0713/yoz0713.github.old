@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寶輝</title>
+    <link rel="stylesheet" href="swiper-8.3.0/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    
+</head>
+<body>
+    <div class="swiper">
+        
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide s1"></div>
+            <img src="寶輝2.jpeg" class="img3">
+            <div class="swiper-slide s1.5"></div>
+            <div class="swiper-slide s2">
+                <div class="text">
+                    <h2></h2>
+                </div>
+                <img src="../buliding.jpg" class="img2">
+            </div>
+            <div class="swiper-slide s3">Slide 3</div>
+            <div class="swiper-scrollbar"></div>
+       
+        </div>
+     </div>
+
+     <div class="counter"></div>
+
+     <script src="swiper-8.3.0/swiper/swiper-bundle.min.js"> </script>
+    <script>
+        let swiper = document.getElementsByClassName("swiper")[0];
+        let s1 = document.getElementsByClassName("s1")[0];
+        let counter = document.getElementsByClassName("counter")[0];
+        let sw = document.getElementsByClassName("swiper-wrapper")[0];
+        let img = document.querySelector(".img3");
+        let timer;
+        let timer2;
+        window.addEventListener("mousewheel",function(e){
+            console.log((sw.style.transform).substring(18,22))
+           
+          if((sw.style.transform).substring(18,22) == 1058){
+            let count = 5;
+            clearInterval(timer2)
+            timer = setInterval(()=>{
+                count = count+0.1
+                img.style.transform = `translateY(-${count*2}px)`;
+             
+            },1)
+         
+            console.log(img.style.bottom)
+          
+          }else{
+            h2.style.display = "none";
+             clearInterval(timer);
+             img.style.transform =`translateY(0)`;
+             clearInterval(timer2)
+             if((sw.style.transform).substring(18,22) == 2116){
+            let count = 5;
+            timer2 = setInterval(()=>{
+                count = count+0.1
+                img.style.transform = `translateY(${count*2}px)`;
+            },1)
+        }else{
+            clearInterval(timer2)
+        }
+          }
+        })
+      
+         
+        var mySwiper = new Swiper ('.swiper', {
+        observer: true,
+        direction: 'vertical', // 垂直切换选项
+       
+        mousewheel:true,
+   
+        // 如果需要滚动条
+        scrollbar: {
+        el: '.swiper-scrollbar',
+        },
+    })        
+
+    let h2 = document.querySelector("h2");
+    let span = document.createElement("span");
+    let text = "Following the benchmark for a new way of living set by City Park and The Park";
+    text = text.split(" ");
+        for(let i=0 ; i<text.length; i++){
+            h2.innerHTML += `<span>${text[i]} </span>`
+        }
+        let s = document.querySelectorAll("span")
+        let transition = 0.2;
+        for(let i = 0 ; i < s.length ; i++){
+           
+            transition += 0.05;
+            s[i].style.animationDelay = `${transition}s`
+            console.log(s[i].innerText)
+        }
+      
+  </script>
+    </script>
+</body>
+</html>

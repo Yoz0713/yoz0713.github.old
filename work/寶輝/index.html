@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寶輝</title>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <main>
+        <img src="buliding.jpg" >
+        <div class="text">
+            <h2></h2>
+        </div>
+    </main>
+
+
+    <script>
+        let main = document.querySelector("main")
+        let h2 = document.querySelector("h2");
+        let span = document.createElement("span");
+        let img = document.querySelector("img");
+        let word = document.getElementsByClassName("text")[0];
+        let text = "Following the benchmark for a new way of living set by City Park and The Park"
+        text = text.split(" ");
+        for(let i=0 ; i<text.length; i++){
+            h2.innerHTML += `<span>${text[i]} </span>`
+        }
+        let s = document.querySelectorAll("span")
+        let transition = 0.2;
+        for(let i = 0 ; i < s.length ; i++){
+           
+            transition += 0.05;
+            s[i].style.animationDelay = `${transition}s`
+            console.log(s[i].innerText)
+        }
+      
+
+        window.onscroll = function(){
+            let move = Math.floor(document.documentElement.scrollTop)
+            if(move >= word.offsetTop-1000){
+                h2.style.display = "block";
+                img.style.display = "block"
+            }
+
+        }
+        
+    </script>
+</body>
+</html>
