@@ -68,9 +68,9 @@
 }
 .second-page-top-text {
   position: absolute;
-  bottom: 0;
+  bottom: 2%;
   width: 65%;
-  right: 4%;
+  right: 2%;
 }
 .second-page-bottom {
   color: rgb(178, 130, 71);
@@ -143,8 +143,8 @@
 .forth-page-top-text {
   position: absolute;
   width: 65%;
-  bottom: 3%;
-  left: 26%;
+  bottom: 5%;
+  left: 30%;
 }
 .forth-page-bottom {
   width: 100%;
@@ -180,7 +180,7 @@
   display: inline-block;
   -ms-writing-mode: lr-tb;
       writing-mode: horizontal-tb;
-  font-size: 9.5rem;
+  font-size: 8rem;
   font-weight: 500;
   transform: translateY(25px);
 }
@@ -297,7 +297,7 @@ html, body {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: rgb(178, 130, 71);
 }
 

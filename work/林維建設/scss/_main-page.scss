@@ -62,9 +62,9 @@
         }
         &-text{
             position: absolute;
-            bottom: 0;
+            bottom: 2%;
             width: 65%;
-            right: 4%;
+            right: 2%;
         }
     }
     &-bottom{
@@ -138,8 +138,8 @@
         &-text{
                 position: absolute;
                 width: 65%;
-                bottom: 3%;
-                left: 26%;
+                bottom: 5%;
+                left: 30%;
             }
  
     }
@@ -172,7 +172,7 @@
             span{
             display: inline-block;
             writing-mode: horizontal-tb;
-            font-size: 9.5rem;
+            font-size: 8rem;
             font-weight: 500;
             transform: translateY(25px);
             } 
