@@ -57,7 +57,7 @@
 .second-page-top .num-3 {
   position: absolute;
   bottom: 15%;
-  left: 13%;
+  left: 13vw;
   width: 20%;
 }
 .second-page-top .num-0 {
@@ -106,13 +106,13 @@
   width: 45%;
   position: absolute;
   top: 30%;
-  left: 2%;
+  left: 2vw;
 }
 .third-page-bottom-text {
   width: 60%;
   position: absolute;
   top: 45%;
-  left: 37%;
+  left: 37vw;
 }
 
 .forth-page {
@@ -138,7 +138,7 @@
   position: absolute;
   width: 18%;
   bottom: 33%;
-  left: 34%;
+  left: 34vw;
 }
 .forth-page-top-text {
   position: absolute;
