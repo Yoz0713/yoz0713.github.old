@@ -68,9 +68,9 @@
 }
 .second-page-top-text {
   position: absolute;
-  bottom: 4%;
+  bottom: 0;
   width: 65%;
-  right: 2%;
+  right: 4%;
 }
 .second-page-bottom {
   color: rgb(178, 130, 71);
