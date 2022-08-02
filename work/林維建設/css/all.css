@@ -166,18 +166,16 @@
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url(../元件/1x/S5_bg-100.jpg);
-  background-size: 100% 95%;
-  background-repeat: no-repeat;
 }
 .fifth-page-top {
   width: 100%;
-  height: 90vh;
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
 }
 .fifth-page-top h2 {
   position: absolute;
-  height: 100%;
   left: 15%;
   top: 0;
   -ms-writing-mode: tb-lr;
@@ -187,19 +185,17 @@
   display: inline-block;
   -ms-writing-mode: lr-tb;
       writing-mode: horizontal-tb;
-  font-size: 8rem;
+  font-size: 24vw;
   font-weight: 500;
-  transform: translateY(25px);
+  transform: translateY(5vw);
 }
 .fifth-page-top-text {
   position: absolute;
-  right: 3%;
-  bottom: 10%;
+  right: 3vw;
+  top: 120vw;
 }
-.fifth-page-bottom {
+.fifth-page-img img {
   width: 100%;
-  position: relative;
-  height: 20vh;
 }
 
 .sixth-page {
@@ -314,15 +310,9 @@
   .forth-page p {
     bottom: 15vw;
   }
-  .fifth-page-top h2 {
-    font-size: 1.4rem;
-  }
-  .fifth-page-top h2 span {
-    font-size: 7rem;
-  }
-  .fifth-page-bottom-text {
-    top: 16%;
-    right: 3%;
+  .fifth-page-top-text {
+    bottom: 33vw;
+    right: 3vw;
   }
   .sixth-page-top-word {
     top: 10%;
@@ -341,7 +331,7 @@ html, body {
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 7.5vw;
   color: rgb(178, 130, 71);
 }
 
