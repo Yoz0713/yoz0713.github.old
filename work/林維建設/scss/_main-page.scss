@@ -187,6 +187,7 @@
             left: 15%;
             top: 0;
             writing-mode: vertical-lr;
+            white-space: nowrap;
             span{
             display: inline-block;
             writing-mode: horizontal-tb;
