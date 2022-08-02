@@ -44,37 +44,45 @@
 .second-page {
   width: 100%;
   height: 100vh;
-  background-image: url(../元件/1x/s2_bg-100.jpg);
-  background-position: right 20%;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  position: relative;
 }
 .second-page-top {
   width: 100%;
-  height: 70%;
-  position: relative;
-}
-.second-page-top .num-3 {
+  height: 100%;
+  top: 0;
+  left: 0;
   position: absolute;
-  bottom: 15%;
-  left: 13vw;
-  width: 20%;
+  overflow-x: hidden;
 }
-.second-page-top .num-0 {
+.second-page-top-num {
   position: absolute;
-  right: 48%;
-  bottom: 30%;
-  width: 20%;
+  top: 60vw;
+  left: 9vw;
+}
+.second-page-top-num .num-3 {
+  width: 19vw;
+}
+.second-page-top-num .num-0 {
+  width: 20vw;
+  margin-bottom: 13vw;
 }
 .second-page-top-text {
   position: absolute;
-  bottom: 2%;
-  width: 65%;
-  right: 2vw;
+  top: 100vw;
+  left: 35vw;
+  width: 62vw;
 }
-.second-page-bottom {
-  color: rgb(178, 130, 71);
-  padding: 5% 15%;
+.second-page-top-text img {
+  width: 100%;
+}
+.second-page-top p {
+  position: absolute;
+  top: 150vw;
+  left: 10vw;
+  width: auto;
+}
+.second-page-img img {
+  width: 100%;
 }
 
 .third-page {
@@ -92,7 +100,7 @@
 }
 .third-page-top-text {
   position: absolute;
-  right: 15%;
+  right: 10vw;
   top: 40%;
   color: rgb(178, 130, 71);
 }
@@ -118,40 +126,43 @@
 .forth-page {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 .forth-page-top {
-  position: relative;
-  background-image: url(../元件/1x/s4_bg-100.jpg);
-  background-position: right 20px;
-  background-repeat: no-repeat;
-  background-size: 100%;
   width: 100%;
-  height: 70vh;
-}
-.forth-page-top .num-1 {
+  height: 100vh;
   position: absolute;
+  overflow-x: hidden;
+}
+.forth-page-top-num {
+  position: absolute;
+  top: 65vw;
+  width: 100%;
+  left: 15vw;
+  height: 20vh;
+}
+.forth-page-top-num .num-1 {
   width: 16%;
-  bottom: 30%;
-  left: 14%;
 }
-.forth-page-top .num-0 {
-  position: absolute;
-  width: 18%;
-  bottom: 33%;
-  left: 34vw;
+.forth-page-top-num .num-0 {
+  width: 20%;
 }
 .forth-page-top-text {
   position: absolute;
-  width: 65%;
-  bottom: 5%;
+  top: 100vw;
   left: 30vw;
+  width: 67vw;
 }
-.forth-page-bottom {
+.forth-page-top-text img {
   width: 100%;
-  height: 30vh;
 }
-.forth-page-bottom-text {
-  padding: 5% 15%;
+.forth-page-top p {
+  position: absolute;
+  top: 150vw;
+  left: 10vw;
+}
+.forth-page-img img {
+  width: 100%;
 }
 
 .fifth-page {
@@ -241,15 +252,38 @@
 }
 
 @media all and (max-width: 380px) {
-  .second-page-top .num-3 {
-    left: 12%;
-    bottom: 5%;
+  .second-page-top-num {
+    top: 65vw;
+    left: 25vw;
   }
-  .second-page-top .num-0 {
-    bottom: 21%;
+  .second-page-top-num .num-3 {
+    width: 20%;
+    left: 20vw;
+    bottom: 5vw;
+  }
+  .second-page-top-num .num-0 {
+    width: 20%;
+    margin-bottom: 8vw;
+    margin-left: 1vw;
   }
   .second-page-top-text {
-    bottom: -5%;
+    width: 60%;
+    top: 93vw;
+    left: 40vw;
+  }
+  .second-page-img {
+    width: 100%;
+    position: relative;
+    z-index: -2;
+  }
+  .second-page-img img {
+    width: 85%;
+    position: absolute;
+    right: 0;
+    top: 8vw;
+  }
+  .second-page p {
+    bottom: 15vw;
   }
   .third-page-bottom .num-27 {
     top: 13%;
@@ -257,20 +291,37 @@
   .third-page-bottom-text {
     top: 32%;
   }
-  .forth-page-top .num-1 {
-    width: 14%;
-    bottom: 20%;
-    left: 14%;
+  .forth-page-top-num {
+    top: 70vw;
+    left: 4vw;
   }
-  .forth-page-top .num-0 {
-    width: 18%;
-    bottom: 23%;
-    left: 30%;
+  .forth-page-top-num .num-1 {
+    width: 14%;
+    left: 23.5vw;
+    bottom: 18vw;
+  }
+  .forth-page-top-num .num-0 {
+    width: 16%;
+    bottom: 21vw;
   }
   .forth-page-top-text {
-    width: 65%;
-    bottom: -6%;
-    left: 30%;
+    width: 60%;
+    top: 93vw;
+    left: 40vw;
+  }
+  .forth-page-img {
+    width: 100%;
+    position: relative;
+    z-index: -2;
+  }
+  .forth-page-img img {
+    width: 85%;
+    position: absolute;
+    right: 0;
+    top: 8vw;
+  }
+  .forth-page p {
+    bottom: 15vw;
   }
   .fifth-page-top h2 {
     font-size: 1.4rem;
@@ -301,7 +352,9 @@ h2 {
 }
 
 p {
-  line-height: 2rem;
-  font-size: 17px;
+  line-height: 5vw;
+  font-size: 4vw;
+  letter-spacing: 0.7vw;
+  font-weight: 400;
   color: rgb(178, 130, 71);
 }
