@@ -192,7 +192,7 @@
 }
 .fifth-page-top-text {
   position: absolute;
-  right: 3vw;
+  right: 7vw;
   top: 120vw;
 }
 .fifth-page-img img {
@@ -339,7 +339,7 @@ h2 {
 p {
   line-height: 6.5vw;
   font-size: 3.8vw;
-  letter-spacing: 0.7vw;
+  letter-spacing: 0.2vw;
   font-weight: 400;
   color: rgb(178, 130, 71);
 }
