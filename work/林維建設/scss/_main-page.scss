@@ -93,38 +93,34 @@
 .third-page{
     width: 100%;
     height: 100vh;
-    background-image: url(../元件/1x/s3_bg-100.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position:left bottom;
     &-top{
     width: 100%;
-    height: 20vh;
-    position: relative;
-
+    position: absolute;
     &-text{
         position: absolute;
         right: 10vw;
-        top: 40%;
-        color: rgb(178,130,71);
+        top: 0;
+        z-index: 1;
     }
     }
-    &-bottom{
+    &-img{
     width: 100%;
-    height: 80vh;
-    z-index: 2;
+    height: 100%;
     position: relative;
     .num-27{
-        width: 45%;
+        width: 45vw;
         position: absolute;
-        top: 30%;
+        top: 45vw;
         left: 2vw;
     }
     &-text{
         width: 60%;
         position: absolute;
-        top: 45%;
+        top: 70vw;
         left: 37vw;
+    }
+    .bg{
+        width: 100%;
     }
     }
 }
@@ -203,7 +199,7 @@
         }
         &-text{
             position: absolute;
-            right: 6%;
+            right: 3%;
            bottom: 10%;
         }
     }
@@ -232,7 +228,7 @@
             left: 0;
             right: 0;
             margin: 0 auto;
-            top: 20%;
+            top: 15%;
             img:not(first-child){
                 margin-top: 25px;
             }
@@ -279,6 +275,9 @@
             top: 93vw;
             left: 40vw;
         }
+        p{
+            top: 130vw;
+        }
     }
     &-img{
         width: 100%;
@@ -291,25 +290,14 @@
             top: 8vw;
         }
     }
-    p{
-        bottom: 15vw;
+   
     }
-    }
-    .third-page{
-        &-bottom{
-            .num-27{
-                top: 13%;
-            }
-            &-text{
-                top: 32%;
-            }
-        }
-    }
+  
     .forth-page{
         &-top{
             &-num{
-                top: 70vw;
-                left: 4vw;
+                top: 65vw;
+                left: 28vw;
                 .num-1{
                     width: 14%;
                     left: 23.5vw;
@@ -317,7 +305,7 @@
                 }
                 .num-0{
                     width: 16%;
-                    bottom: 21vw;
+                    margin-bottom: 2vw;
                 }
             }
             &-text{
@@ -354,6 +342,13 @@
             &-text{
                 top: 16%;
                 right: 3%;
+            }
+        }
+    }
+    .sixth-page{
+        &-top{
+            &-word{
+                top: 10%;
             }
         }
     }
