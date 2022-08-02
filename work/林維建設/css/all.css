@@ -180,7 +180,7 @@
   top: 0;
   -ms-writing-mode: tb-lr;
       writing-mode: vertical-lr;
-  white-space: nowrap;
+  height: 100%;
 }
 .fifth-page-top h2 span {
   display: inline-block;
