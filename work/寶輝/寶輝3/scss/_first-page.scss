@@ -1,0 +1,48 @@
+.first-page{
+    width: 100%;
+    height: 100vh;
+    .swiper1{
+        width: 100%;
+        height:100%;
+        .swiper-wrapper{
+            width: 100%;
+            height: 100%;
+            .swiper-slide{
+                width: 100%;
+                height: 100%;
+                img{
+                    width: 100%;
+                    height: 100vh;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .swiper2{
+        position: absolute;
+        bottom:40vh;
+        left:10vw;
+        overflow: visible;
+        width: 100%;
+      .swiper-wrapper{
+        width: 100%;
+        .swiper-slide{
+            position: relative;
+            width: 100%;
+            .text-right{
+                margin-top: 150px;
+                transform: translateX(15vw);
+            }
+            h1{
+                position: relative;
+                transform: translate(0,-5vw);
+                span{
+          
+                    position: absolute;
+                    transform: translateX(6vw);
+                }
+            }
+        }
+      }
+    }
+}

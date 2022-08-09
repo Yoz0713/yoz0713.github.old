@@ -1,0 +1,48 @@
+@import "first-page";
+@import "footer&contact";
+@import "main-page";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+html,body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+h5{
+    font-size: 1vw;
+    color: rgb(229,240,246);
+    font-weight: 300;
+    line-height: 88px;
+    cursor: pointer;
+    letter-spacing: 0.2vw;
+}
+h2{
+    color: #fff;
+    font-size: 2.2vw;
+    letter-spacing: 0.2vw;
+}
+h1{
+    font-size: 6vw;
+    color: #fff;
+}
+p{
+    color: #fff;
+    font-size: 1.6vw;
+    line-height: 3vw;
+    letter-spacing: 0.2vw;
+}
+span{
+    position: absolute;
+    right: 2vw;
+    bottom:25px;
+    color: #fff;
+    font-size: 0.8vw;
+}

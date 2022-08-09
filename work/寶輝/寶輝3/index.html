@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>寶輝</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="first-page">
+        <div class="swiper swiper1">
+            <div class="swiper-wrapper swiper-no-swiping">
+                <div class="swiper-slide">
+                    <img src="./寶輝一頁式元件/slide1-1.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./寶輝一頁式元件/slide1-2.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./寶輝一頁式元件/slide1-3.jpg" >
+                </div>
+            </div>
+        </div>
+        <div class="swiper swiper2">
+            <div class="swiper-wrapper swiper-no-swiping">
+                <div class="swiper-slide">
+                    <h2>New Luxury home <br> in a Garden Estate</h2>
+                    <h2 class="text-right">Unveiling Soon <br> in Beitun</h2>
+                </div>
+                <div class="swiper-slide">
+                    <h1>北屯 <br>
+                    <span>綠生活</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="oneCut">
+            <div class="oneCut-text">
+                <p>Following the benchmark for a new way of living <br> set by City Paak and The Park</p>
+            </div>
+            <div class="oneCut-img">
+                <div class="img-box img1">
+                    <img src="./寶輝一頁式元件/s2_img1.jpg">
+                    <span>寶輝VILLAGE 3D效果圖  僅供參考</span>
+                </div>
+              
+            </div>
+        </div>
+        <div class="second-cut">
+            <div class="img-box1 img2">
+                <img src="./寶輝一頁式元件/s2_img2.jpg" >
+                <span>寶輝都會莊園系列  業績實景</span>
+            </div>
+            <div class="img-box2 img3">
+                <img src="./寶輝一頁式元件/s2_img3.jpg" >
+                <span>寶輝都會莊園系列  業績實景</span>
+            </div>
+       
+        </div>
+        <div class="third-cut">
+            <div class="third-cut-left">
+                <div class="img-box img4">
+                    <img src="./寶輝一頁式元件/s2_img4.jpg" >
+                    <span>寶輝都會莊園系列  業績實景</span>
+                </div>
+              
+            </div>
+            <div class="third-cut-right">
+                <div class="third-cut-right-text">
+
+                </div>
+                <div class="third-cut-right-img">
+                    <img src="./寶輝一頁式元件/s2_img5.jpg" class="img5">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <div class="contact">
+        <div class="contact-language">
+            <h5>ENGLISH</h5>
+            <h5>中文</h5>
+        </div>
+        <div class="contact-toform">
+            <h5>CONTACT &ensp;US</h5>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-logo">
+            <img src="./寶輝一頁式元件/logo-color.svg" alt="寶輝建設">
+        </div>
+    </footer>
+
+
+    <script >
+        let swiper = document.getElementsByClassName("swiper1")[0];
+        let swiper_2 = document.getElementsByClassName("swiper2")[0];
+        const swiper1 = new Swiper(swiper,{
+            loop:true,
+            autoplay:{
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+            effect : 'fade',
+            fadeEffect: {
+                crossFade: true,
+            },
+            speed:3000
+        });
+        const swiper2 = new Swiper(swiper_2,{
+            loop:true,
+            autoplay:true,
+            effect : 'fade',
+            fadeEffect: {
+                crossFade: true,
+            },
+            speed:3000
+        });
+
+        // ----圖片上下滑動
+        const img1 =document.querySelectorAll(".img1");
+        const img2 =document.querySelectorAll(".img2");
+        const img3 =document.querySelectorAll(".img3");
+        const oneCut = document.getElementsByClassName("oneCut")[0];
+        let gg = gsap.timeline({
+            scrollTrigger:{
+                    trigger:".img1",
+                    start:"top bottom",
+                    toggleActions: "play none none reverse",
+                },
+        });
+        let gg1 = gsap.timeline({
+            scrollTrigger:{
+                    trigger:".img1",
+                    start:"bottom bottom",
+                    toggleActions: "play none none reverse",
+                },
+        })
+        
+        gg.to(img1,{
+                y:-300,
+                duration: 2,
+                })
+        gg1.to(img1,{
+            y:0,
+            duration:2
+        })
+
+        let gg2 = gsap.timeline({
+            scrollTrigger:{
+                    trigger:".img2",
+                    start:"top bottom",
+                    toggleActions: "play none none reverse",
+                },
+        })
+        gg2.to(img2,{
+            y:-50,
+            duration:3
+        })
+        let gg3= gsap.timeline({
+            scrollTrigger:{
+                    trigger:".img3",
+                    start:"top bottom",
+                    toggleActions: "play none none reverse",
+                },
+        })
+        gg3.to(img3,{
+            y:-50,
+            duration:4.5
+        })
+     
+   
+    </script>
+</body>
+</html>

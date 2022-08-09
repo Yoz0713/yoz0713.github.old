@@ -1,0 +1,60 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 6vh;
+    background-color: #fff;
+    padding: 1vh 7vw;
+    z-index: 2;
+    .footer-logo{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+        img{
+            width:10%;
+        }
+    }
+}
+
+.contact{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 14.2vw;
+    height: 8vw;
+    right: 3vw;
+    top: 3vh;
+
+    z-index: 2;
+    h5{
+        position: relative;
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            width: 100%;
+            height: 0;
+            opacity: 0;
+            border: 2px solid rgb(229,240,246);
+            transition: 0.5s;
+        }
+        &:hover::after{
+           opacity: 1;
+        }
+    }
+   &-language{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+   }
+   &-toform{
+    h5{
+        font-size:1.8vw;
+  
+    }
+   }
+}
