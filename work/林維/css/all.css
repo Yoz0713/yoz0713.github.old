@@ -124,7 +124,7 @@
   align-items: flex-end;
   width: 100%;
   height: 20%;
-  padding: 15vh 5vw;
+  padding: 0 5vw 11vh;
 }
 .forth-page-right-bottom img {
   width: 38vw;
@@ -184,7 +184,7 @@
   align-items: flex-end;
   width: 100%;
   height: 20%;
-  padding: 15vh 5vw;
+  padding: 0 5vw 11vh;
 }
 .fifth-page-right-bottom img {
   width: 38vw;
@@ -221,7 +221,7 @@
   margin-left: 3vw;
 }
 .sixth-page-top-right :nth-child(1) {
-  width: 24vw;
+  width: 27vw;
   margin-left: 7vw;
 }
 .sixth-page-bottom {
@@ -310,7 +310,7 @@
 }
 .eighth-page-right :nth-child(1) {
   width: 10vw;
-  transform: translateX(-5vw);
+  margin-right: 5vw;
 }
 .eighth-page-right :nth-child(2) {
   width: 6.5vw;
@@ -568,16 +568,18 @@
   }
   .seventh-page-left :nth-child(2) {
     width: 27vw;
-    transform: translateX(10vw);
+    margin-left: 10.5vw;
     order: 1;
   }
   .seventh-page-left :nth-child(1) {
     width: 3vw;
     order: 3;
+    margin-right: 3.8vw;
   }
   .seventh-page-left :nth-child(3) {
     width: 11.5vw;
     order: 2;
+    margin-right: 10vw;
   }
   .seventh-page-right {
     width: 100%;
@@ -612,7 +614,7 @@
   }
   .eighth-page-left :nth-child(1) {
     width: 3vw;
-    transform: translateX(-5vw);
+    margin-right: 5.5vw;
   }
   .eighth-page-left :nth-child(2) {
     width: 48vw;
@@ -628,9 +630,10 @@
   }
   .eighth-page-right :nth-child(3) {
     width: 30vw;
-    transform: translateX(-8vw);
+    margin-right: 8vw;
   }
   .eighth-page-right :nth-child(4) {
+    margin-left: 2vw;
     width: 10vw;
   }
 }
@@ -844,7 +847,7 @@
     height: 20%;
   }
   .sixth-page-bottom :not(:last-child) {
-    padding-bottom: 0.5vw;
+    padding-bottom: 1vw;
   }
   .seventh-page-left {
     padding: 20vh 5vw 0;
@@ -853,6 +856,7 @@
     width: 35vw;
     transform: translateX(0);
     order: 1;
+    margin-right: 5vw;
   }
   .seventh-page-left :nth-child(1) {
     width: 4.5vw;
@@ -896,11 +900,28 @@
   }
   .eighth-page-right :nth-child(3) {
     width: 38vw;
-    transform: translateX(-5vw);
+    margin-left: 8vw;
+    margin-right: 1vw;
   }
   .eighth-page-right :nth-child(4) {
-    transform: translateX(1vw);
+    margin-left: 7vw;
     width: 15vw;
+  }
+}
+@media all and (max-width: 920px) and (max-width: 420px) and (max-width: 380px) {
+  .forth-page-left {
+    width: 100%;
+    height: 20%;
+  }
+  .forth-page-right {
+    display: flex;
+    order: -1;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+  }
+  .seventh-page-left {
+    padding: 15vh 5vw 0;
   }
 }
 * {
@@ -913,6 +934,7 @@
 html, body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 p {
