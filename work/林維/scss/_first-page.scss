@@ -399,34 +399,27 @@
                 align-items: flex-start;
                 flex-direction: column;
                 width: 100%;
-                height: 80%;
+                height: 100%;
                 padding: 5vh 10vw 0;
-             
                 img{
-                    height: 50%;
-                    width: 50vw;
+                    width: 100%;
                     order: -1;
                 }
                 &-box{
-                 
+                    display: flex;
                     width: 100%;
-                    height: 50%;
+                    height: 100%;
                     transform: translateY(3vh);
                     position: relative;
                     & :nth-child(2){
-                        position: absolute;
-                        transform: scale(2.5);
-                        width: 10vw;
-                        right: -5vw;
-                        bottom: 5vw;
-                 
+                        order: 3;
+                        width: 4.5vw;
+                        transform: translateX(3vw);
                     }
                     & :nth-child(3){
-                        position: absolute;
-                        transform: scale(2.8);
-                        width: 40vw;
-                        left: 3vw;
-                        bottom: 4vw;
+                        order: -1;
+                        width: 30vw;
+                        transform: translateX(-1vw);
                     }
                   
                 }
@@ -475,33 +468,28 @@
                 align-items: flex-start;
                 flex-direction: column;
                 width: 100%;
-                height: 80%;
+                height: 100%;
                 padding: 5vh 10vw 0;
           
                 img{
-                    height: 50%;
-                    width: 50vw;
+                    width: 100%;
                     order: -1;
                 }
                 &-box{
+                    display: flex;
                     width: 100%;
-                    height: 50%;
+                    height: 100%;
                     transform: translateY(3vh);
                     position: relative;
                     & :nth-child(2){
-                        position: absolute;
-                        transform: scale(2.5);
-                        width: 10vw;
-                        right: -5vw;
-                        bottom: 5vw;
-                 
+                        width: 5vw;
+                        order: 2;
+                      transform: translateX(3vw);
                     }
                     & :nth-child(3){
-                        position: absolute;
-                        transform: scale(2.6);
-                        width: 50vw;
-                        left: -5vw;
-                        bottom: 3.5vw;
+                        order: -1;
+                        width:36vw;
+                        transform: translateX(1vw);
                     }
                   
                 }
@@ -701,41 +689,48 @@
             }
         }
         .forth-page{
+            &-left{
+                width: 100%;
+                height: 25%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
             &-right{
+                display: flex;
+                order: -1;
+                width: 100%;
+                height: 75%;
+                overflow: hidden;
                 &-top{
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-start;
                     flex-direction: column;
                     width: 100%;
-                    height: 80%;
+                    height: 100%;
                     padding: 5vh 10vw 0;
-                    transform: translateY(-5.5vh);
                     img{
-                        width: 50vw;
-                        height:fit-content;
+                        width: 100%;
                         order: -1;
                     }
                     &-box{
+                        display: flex;
                         width: 100%;
-                        height: 50%;
+                        height: 100%;
                         transform: translateY(3vh);
                         position: relative;
                         & :nth-child(2){
-                            position: absolute;
-                            transform: scale(2.5);
-                            width: 2.8vw;
-                            right: -1vw;
-                            bottom: 14.5vw;
-                     
+                            order: 3;
+                            width: 7vw;
+                            transform: translateX(3vw);
                         }
                         & :nth-child(3){
                             order: -1;
-                            position: absolute;
-                            transform: scale(2.6);
-                            width: 15vw;
-                            left: 12vw;
-                            bottom: 11vw;
+                            width: 40vw;
+                            transform: translateX(0vw);
                         }
                       
                     }
@@ -745,51 +740,58 @@
                     order: -1;
                     display:block;
                     padding: 5vh 10vw;
-                    width: 100%;
+                    width: 40%;
                     height: 20%;
                   
                     img{
-                        width: 4.5vw;
+                        width: 5vw;
                     }
                 }
             }
         }
         .fifth-page{
+            &-left{
+                width: 100%;
+                height: 25%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
             &-right{
+                display: flex;
+                order: -1;
+                width: 100%;
+                height: 75%;
+                overflow: hidden;
                 &-top{
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-start;
                     flex-direction: column;
                     width: 100%;
-                    height: 80%;
+                    height: 100%;
                     padding: 5vh 10vw 0;
-                    transform: translateY(-5.5vh);
                     img{
-                        width: 50vw;
-                        height:fit-content;
+                        width: 100%;
                         order: -1;
                     }
                     &-box{
+                        display: flex;
                         width: 100%;
-                        height: 50%;
+                        height: 100%;
                         transform: translateY(3vh);
                         position: relative;
                         & :nth-child(2){
-                            position: absolute;
-                            transform: scale(2.5);
-                            width: 2.8vw;
-                            right: -1vw;
-                            bottom: 14.5vw;
-                     
+                            order: 3;
+                            width: 7vw;
+                            transform: translateX(3vw);
                         }
                         & :nth-child(3){
                             order: -1;
-                            position: absolute;
-                            transform: scale(2.6);
-                            width: 17vw;
-                            left: 8vw;
-                            bottom: 16vw;
+                            width: 40vw;
+                            transform: translateX(0vw);
                         }
                       
                     }
@@ -799,11 +801,11 @@
                     order: -1;
                     display:block;
                     padding: 5vh 10vw;
-                    width: 100%;
+                    width: 40%;
                     height: 20%;
                   
                     img{
-                        width: 4.5vw;
+                        width: 5vw;
                     }
                 }
             }
