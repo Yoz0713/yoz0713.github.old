@@ -333,6 +333,8 @@
     }
     .computer{
         display: none;
+        position: absolute;
+        left: -500%;
     }
     .second-page{
         background-image: url(../元件/手機板/1x/s2_ph_bg.png);
