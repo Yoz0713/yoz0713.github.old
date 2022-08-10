@@ -278,13 +278,19 @@
             })
             gg.fromTo(".first-page img",{
                 width:0,
-    
+                opacity:0,
             },{
-               
+                opacity:0.8,
                 width:"100%",
                 duration:3,
                 delay:0.3,
 
+            }).fromTo(".first-page img",{
+                width:"100%"
+            },{
+                width:"140%",
+                duration:60
+                
             })
         }
     </script>
