@@ -34,8 +34,8 @@
     </div>
     <div class="forth-page">
         <div class="forth-page-left">
-            <img src="./元件/電腦版/1x/s4_img2.png" class="computer" >
-            <img src="./元件/手機板/1x/s4__ph_img2.png" class="phone" >
+            <img src="./元件/電腦版/1x/s4_img2.png" class="computer pic" >
+            <img src="./元件/手機板/1x/s4__ph_img2.png" class="phone pic" >
         </div>
         <div class="forth-page-right">
             <div class="forth-page-right-top">
@@ -44,7 +44,7 @@
                     <img src="./元件/電腦版/SVG/s4_txt1.svg" class="img1">
                     <img src="./元件/手機板/SVG/s4_ph_txt2.svg" class="phone img2">
                 </div>
-                    <img src="./元件/電腦版/1x/s4_img1.png">
+                    <img src="./元件/電腦版/1x/s4_img1.png" class="pic">
           
                
             </div>
@@ -57,8 +57,8 @@
     </div>
     <div class="fifth-page">
         <div class="fifth-page-left">
-            <img src="./元件/電腦版/1x/s5_img2.png" class="computer">
-            <img src="./元件/手機板/1x/s5__ph_img2.png" class="phone">
+            <img src="./元件/電腦版/1x/s5_img2.png" class="computer pic">
+            <img src="./元件/手機板/1x/s5__ph_img2.png" class="phone pic">
         </div>
         <div class="fifth-page-right">
             <div class="fifth-page-right-top">
@@ -67,7 +67,7 @@
                     <img src="./元件/電腦版/SVG/s5_txt1.svg" class="img1">
                     <img src="./元件/手機板/SVG/s5_ph_txt2.svg" class="phone img2">
                 </div>
-                    <img src="./元件/電腦版/1x/s5_img1.png">
+                    <img src="./元件/電腦版/1x/s5_img1.png" class="pic">
             </div>
             <div class="fifth-page-right-bottom">
                 <img src="./元件/電腦版/SVG/s5_txt3.svg
@@ -102,13 +102,13 @@
             <img src="./元件/電腦版/SVG/s7_txt1.svg" class="img2">
         </div>
         <div class="seventh-page-right">
-            <img src="./元件/電腦版/1x/s7_img1.png">
+            <img src="./元件/電腦版/1x/s7_img1.png" class="pic">
         </div>
     </div>
     <div class="eighth-page">
         <div class="eighth-page-left">
             <img src="./元件/電腦版/SVG/s8_txt3.svg" class="img1">
-            <img src="./元件/電腦版/1x/s8_img1-PhotoRoom.png" class="computer">
+            <img src="./元件/電腦版/1x/s8_img1-PhotoRoom.png" class="computer pic">
         </div>
         <div class="eighth-page-right">
             <img src="./元件/電腦版/SVG/s8_txt2.svg" class="computer img3">
@@ -117,7 +117,7 @@
             <img src="./元件/手機板/SVG/s8_ph_txt3.svg" class="phone img3">
             <img src="./元件/手機板/SVG/s8_ph_txt2.svg" class="phone img2">
         </div>
-        <img src="./元件/電腦版/1x/s8_img1-PhotoRoom.png" class="phone bg">
+        <img src="./元件/電腦版/1x/s8_img1-PhotoRoom.png" class="phone bg pic">
     </div>
     <script>
         ScrollTrigger.config({ ignoreMobileResize: true });
@@ -130,35 +130,25 @@
         sixthPageAnimation()
         pageAnimation("seventh-page")
         pageAnimation("eighth-page")
-        function pageAnimationForPic(){
+
+        pageAnimationForPic("fifth-page")
+        pageAnimationForPic("forth-page")
+        pageAnimationForPic("seventh-page")
+        pageAnimationForPic("eighth-page")
+        function pageAnimationForPic(page){
             let gg = gsap.timeline({
                 scrollTrigger:{
                     trigger:`.${page}`,
-                    start:"top 50%",
+                    start:"top bottom",
                 }
             });
-            gg.fromTo(`.${page} .pic1`,{
+            gg.fromTo(`.${page} .pic`,{
                 opacity:0,
-                x:0
+       
             },{
                 opacity:1,
-                duration:2,
-                x:80
-            }).fromTo(`.${page} .pic2`,{
-                opacity:0,
-                x:0
-            },{
-                opacity:1,
-                duration:3,
-                x:80
-            },"<+1").fromTo(`.${page} .pic3`,{
-                opacity:0,
-                x:0
-            },{
-                opacity:1,
-                duration:2,
-                x:80
-            },"<+1")
+                duration:1,
+            })
         }
         function pageAnimation(page){
             let gg = gsap.timeline({
