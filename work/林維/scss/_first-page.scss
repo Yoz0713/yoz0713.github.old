@@ -650,14 +650,14 @@
             padding:10vh 10vw 0;
             &-left{
                 text-align: left;
-                width: 15%;
+                width: 25%;
                 img{
                     width: 12vw;
                   
                 }
             }
             &-right{
-                width: 85%;
+                width: 75%;
                 transform: translateX(5vw);
                 & :nth-child(2){
                     width: 18vw;
@@ -666,7 +666,7 @@
                 & :nth-child(3){
                     order: -1;
                     width: 37vw;
-                    transform: translateX(0vw);
+                    margin-right: 6vw;
                 }
             }
         }
