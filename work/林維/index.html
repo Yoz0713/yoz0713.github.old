@@ -120,6 +120,7 @@
         <img src="./元件/電腦版/1x/s8_img1-PhotoRoom.png" class="phone bg">
     </div>
     <script>
+        firstPageAnimation()
         pageAnimation("second-page")
         pageAnimation("third-page")
         pageAnimation("forth-page")
@@ -268,7 +269,24 @@
             
     
         }
-        
+        function firstPageAnimation(){
+            let gg =gsap.timeline({
+                scrollTrigger:{
+                    trigger:`.first-page`,
+                    start:"top 50%",
+                }
+            })
+            gg.fromTo(".first-page img",{
+                width:0,
+    
+            },{
+               
+                width:"100%",
+                duration:3,
+                delay:0.3,
+
+            })
+        }
     </script>
 </body>
 </html>
