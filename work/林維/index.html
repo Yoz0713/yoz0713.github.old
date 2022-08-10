@@ -120,180 +120,180 @@
         <img src="./元件/電腦版/1x/s8_img1-PhotoRoom.png" class="phone bg">
     </div>
     <script>
-        firstPageAnimation()
-        pageAnimation("second-page")
-        pageAnimation("third-page")
-        pageAnimation("forth-page")
-        pageAnimation("fifth-page")
-        pageAnimation("sixth-page")
-        sixthPageAnimation()
-        pageAnimation("seventh-page")
-        pageAnimation("eighth-page")
-        function pageAnimationForPic(){
-            let gg = gsap.timeline({
-                scrollTrigger:{
-                    trigger:`.${page}`,
-                    start:"top 50%",
-                }
-            });
-            gg.fromTo(`.${page} .pic1`,{
-                opacity:0,
-                x:0
-            },{
-                opacity:1,
-                duration:2,
-                x:80
-            }).fromTo(`.${page} .pic2`,{
-                opacity:0,
-                x:0
-            },{
-                opacity:1,
-                duration:3,
-                x:80
-            },"<+1").fromTo(`.${page} .pic3`,{
-                opacity:0,
-                x:0
-            },{
-                opacity:1,
-                duration:2,
-                x:80
-            },"<+1")
-        }
-        function pageAnimation(page){
-            let gg = gsap.timeline({
-                scrollTrigger:{
-                    trigger:`.${page}`,
-                    start:"top 50%",
+        // firstPageAnimation()
+        // pageAnimation("second-page")
+        // pageAnimation("third-page")
+        // pageAnimation("forth-page")
+        // pageAnimation("fifth-page")
+        // pageAnimation("sixth-page")
+        // sixthPageAnimation()
+        // pageAnimation("seventh-page")
+        // pageAnimation("eighth-page")
+        // function pageAnimationForPic(){
+        //     let gg = gsap.timeline({
+        //         scrollTrigger:{
+        //             trigger:`.${page}`,
+        //             start:"top 50%",
+        //         }
+        //     });
+        //     gg.fromTo(`.${page} .pic1`,{
+        //         opacity:0,
+        //         x:0
+        //     },{
+        //         opacity:1,
+        //         duration:2,
+        //         x:80
+        //     }).fromTo(`.${page} .pic2`,{
+        //         opacity:0,
+        //         x:0
+        //     },{
+        //         opacity:1,
+        //         duration:3,
+        //         x:80
+        //     },"<+1").fromTo(`.${page} .pic3`,{
+        //         opacity:0,
+        //         x:0
+        //     },{
+        //         opacity:1,
+        //         duration:2,
+        //         x:80
+        //     },"<+1")
+        // }
+        // function pageAnimation(page){
+        //     let gg = gsap.timeline({
+        //         scrollTrigger:{
+        //             trigger:`.${page}`,
+        //             start:"top 50%",
          
-                }
-            });
-            gg.fromTo(`.${page} .img1`,{
-                opacity:0,
-                x:80
-            },{
-                opacity:1,
-                duration:2,
-                x:0
-            }).fromTo(`.${page} .img2`,{
-                opacity:0,
-                x:80
-            },{
-                opacity:1,
-                duration:3,
-                x:0
-            },"<+1").fromTo(`.${page} .img3`,{
-                opacity:0,
-                x:80
-            },{
-                opacity:1,
-                duration:2,
-                x:0
-            },"<+1")
-        }
-        function sixthPageAnimation(){
-            ScrollTrigger.matchMedia({
-                "(min-width: 921px)":function(){
-                    let gg = gsap.timeline({
-                    scrollTrigger:{
-                        trigger:`.sixth-page`,
-                        start:"top 50%",
-                    }
-                });
+        //         }
+        //     });
+        //     gg.fromTo(`.${page} .img1`,{
+        //         opacity:0,
+        //         x:80
+        //     },{
+        //         opacity:1,
+        //         duration:2,
+        //         x:0
+        //     }).fromTo(`.${page} .img2`,{
+        //         opacity:0,
+        //         x:80
+        //     },{
+        //         opacity:1,
+        //         duration:3,
+        //         x:0
+        //     },"<+1").fromTo(`.${page} .img3`,{
+        //         opacity:0,
+        //         x:80
+        //     },{
+        //         opacity:1,
+        //         duration:2,
+        //         x:0
+        //     },"<+1")
+        // }
+        // function sixthPageAnimation(){
+        //     ScrollTrigger.matchMedia({
+        //         "(min-width: 921px)":function(){
+        //             let gg = gsap.timeline({
+        //             scrollTrigger:{
+        //                 trigger:`.sixth-page`,
+        //                 start:"top 50%",
+        //             }
+        //         });
 
-                gg.fromTo(`.sixth-page .img-1`,{
-                    height:0,
-                    opacity:0,
-                },{
-                    opacity:1,
-                    delay:3,
-                    height:"100%",
-                    duration:1.5
-                }).fromTo(`.sixth-page .img-2`,{
-                    height:0,
-                    opacity:0
-                },{
-                    height:"100%",
-                    opacity:1,
-                    duration:1.5
-                },"<+0.25").fromTo(`.sixth-page .img-3`,{
-                    height:0,
-                    opacity:0,
-                },{
-                    height:"100%",
-                    opacity:1,
-                    duration:1.5
-                },"<+0.25").fromTo(`.sixth-page .img-4`,{
-                    height:0,
-                    opacity:0,
-                },{
-                    height:"100%",
-                    opacity:1,
-                    duration:1.5
-                },"<+0.25")
+        //         gg.fromTo(`.sixth-page .img-1`,{
+        //             height:0,
+        //             opacity:0,
+        //         },{
+        //             opacity:1,
+        //             delay:3,
+        //             height:"100%",
+        //             duration:1.5
+        //         }).fromTo(`.sixth-page .img-2`,{
+        //             height:0,
+        //             opacity:0
+        //         },{
+        //             height:"100%",
+        //             opacity:1,
+        //             duration:1.5
+        //         },"<+0.25").fromTo(`.sixth-page .img-3`,{
+        //             height:0,
+        //             opacity:0,
+        //         },{
+        //             height:"100%",
+        //             opacity:1,
+        //             duration:1.5
+        //         },"<+0.25").fromTo(`.sixth-page .img-4`,{
+        //             height:0,
+        //             opacity:0,
+        //         },{
+        //             height:"100%",
+        //             opacity:1,
+        //             duration:1.5
+        //         },"<+0.25")
 
-                },
-                "(max-width: 920px)":function(){
-                    let gg = gsap.timeline({
-                    scrollTrigger:{
-                        trigger:`.sixth-page`,
-                        start:"top 50%",
-                    }
-                });
+        //         },
+        //         "(max-width: 920px)":function(){
+        //             let gg = gsap.timeline({
+        //             scrollTrigger:{
+        //                 trigger:`.sixth-page`,
+        //                 start:"top 50%",
+        //             }
+        //         });
 
-                gg.fromTo(`.sixth-page .img-1`,{
-                    height:0
-                },{
-                    delay:3,
-                    height:"20%",
-                    duration:1
-                }).fromTo(`.sixth-page .img-2`,{
-                    height:0
-                },{
-                    height:"20%",
-                    duration:1
-                },"<+0.25").fromTo(`.sixth-page .img-3`,{
-                    height:0
-                },{
-                    height:"20%",
-                    duration:1
-                },"<+0.25").fromTo(`.sixth-page .img-4`,{
-                    height:0
-                },{
-                    height:"20%",
-                    duration:1
-                },"<+0.25")
+        //         gg.fromTo(`.sixth-page .img-1`,{
+        //             height:0
+        //         },{
+        //             delay:3,
+        //             height:"20%",
+        //             duration:1
+        //         }).fromTo(`.sixth-page .img-2`,{
+        //             height:0
+        //         },{
+        //             height:"20%",
+        //             duration:1
+        //         },"<+0.25").fromTo(`.sixth-page .img-3`,{
+        //             height:0
+        //         },{
+        //             height:"20%",
+        //             duration:1
+        //         },"<+0.25").fromTo(`.sixth-page .img-4`,{
+        //             height:0
+        //         },{
+        //             height:"20%",
+        //             duration:1
+        //         },"<+0.25")
 
-                }
-            }
-            )
+        //         }
+        //     }
+        //     )
             
     
-        }
-        function firstPageAnimation(){
-            let gg =gsap.timeline({
-                scrollTrigger:{
-                    trigger:`.first-page`,
-                    start:"top 50%",
-                }
-            })
-            gg.fromTo(".first-page img",{
-                width:0,
-                opacity:0,
-            },{
-                opacity:0.8,
-                width:"100%",
-                duration:3,
-                delay:0.3,
+        // }
+        // function firstPageAnimation(){
+        //     let gg =gsap.timeline({
+        //         scrollTrigger:{
+        //             trigger:`.first-page`,
+        //             start:"top 50%",
+        //         }
+        //     })
+        //     gg.fromTo(".first-page img",{
+        //         width:0,
+        //         opacity:0,
+        //     },{
+        //         opacity:0.8,
+        //         width:"100%",
+        //         duration:3,
+        //         delay:0.3,
 
-            }).fromTo(".first-page img",{
-                scale:1
+        //     }).fromTo(".first-page img",{
+        //         scale:1
            
-            },{
-                scale:1.5,
-                duration:100
+        //     },{
+        //         scale:1.5,
+        //         duration:100
                 
-            })
-        }
+        //     })
+        // }
     </script>
 </body>
 </html>
