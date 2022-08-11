@@ -712,7 +712,7 @@
             height: 730px;
             &-box{
                 position: absolute;
-                right: 10vw;
+                right: 12.5vw;
                 top: 55vw;
                 & :nth-child(3){
                     width: 6.5vw;
@@ -754,7 +754,7 @@
                     flex-direction: column;
                     width: 100%;
                     height: 100%;
-                    padding: 5vh 10vw 0;
+                    padding: 11vw 10vw 0;
                     &-box2{
                         height: fit-content;
                         width: 50vw;
@@ -782,7 +782,7 @@
                 &-bottom{
                     order: -1;
                     display:block;
-                    padding: 5vh 10vw;
+                    padding: 11vw 10vw;
                     width: 40%;
                     height: 20%;
                   
@@ -816,7 +816,7 @@
                     flex-direction: column;
                     width: 100%;
                     height: 100%;
-                    padding: 5vh 10vw 0 0;
+                    padding: 11vw 10vw 0 0;
                     &-box2{
                         height: fit-content;
                         width: 50vw;
@@ -845,7 +845,7 @@
                 &-bottom{
                     order: -1;
                     display:block;
-                    padding: 5vh 10vw;
+                    padding: 11vw 10vw;
                     width: 30%;
                     height: 20%;
                   
@@ -863,7 +863,7 @@
                 justify-content: space-between;
                 width: 50%;
                 height: 100%;
-                padding:9vw 5vh 5vh;
+                padding:9vw 11vw 11vw;
                 &-left{
                     text-align: end;
                     width: 100%;
@@ -902,7 +902,7 @@
                 justify-content: flex-end;
                 width: 100%;
                 height: 100%;
-                padding:0 5vw 5vh;
+                padding:0 5vw 11vw;
                 img{
                     width: 100%;
                     height: 20%;
@@ -915,7 +915,7 @@
         .seventh-page{
             height: 830px;
             &-left{
-                padding: 20vh 5vw 0;
+                padding: 40vw 5vw 0;
                 & :nth-child(2){
                     width: 35vw;
                     transform: translateX(0);

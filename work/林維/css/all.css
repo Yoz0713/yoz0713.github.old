@@ -705,7 +705,7 @@
   }
   .third-page-box {
     position: absolute;
-    right: 10vw;
+    right: 12.5vw;
     top: 55vw;
   }
   .third-page-box :nth-child(3) {
@@ -749,7 +749,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 5vh 10vw 0;
+    padding: 11vw 10vw 0;
   }
   .forth-page-right-top-box2 {
     height: -webkit-fit-content;
@@ -775,7 +775,7 @@
   .forth-page-right-bottom {
     order: -1;
     display: block;
-    padding: 5vh 10vw;
+    padding: 11vw 10vw;
     width: 40%;
     height: 20%;
   }
@@ -809,7 +809,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
-    padding: 5vh 10vw 0 0;
+    padding: 11vw 10vw 0 0;
   }
   .fifth-page-right-top-box2 {
     height: -webkit-fit-content;
@@ -836,7 +836,7 @@
   .fifth-page-right-bottom {
     order: -1;
     display: block;
-    padding: 5vh 10vw;
+    padding: 11vw 10vw;
     width: 30%;
     height: 20%;
   }
@@ -852,7 +852,7 @@
     justify-content: space-between;
     width: 50%;
     height: 100%;
-    padding: 9vw 5vh 5vh;
+    padding: 9vw 11vw 11vw;
   }
   .sixth-page-top-left {
     text-align: end;
@@ -890,7 +890,7 @@
     justify-content: flex-end;
     width: 100%;
     height: 100%;
-    padding: 0 5vw 5vh;
+    padding: 0 5vw 11vw;
   }
   .sixth-page-bottom img {
     width: 100%;
@@ -903,7 +903,7 @@
     height: 830px;
   }
   .seventh-page-left {
-    padding: 20vh 5vw 0;
+    padding: 40vw 5vw 0;
   }
   .seventh-page-left :nth-child(2) {
     width: 35vw;
