@@ -8,15 +8,9 @@
 }
 .first-page img {
   width: 100%;
-  position: absolute;
-  right: 0;
-  left: 0;
-  margin: auto;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  top: 0;
-  bottom: 0;
 }
 
 .second-page {
