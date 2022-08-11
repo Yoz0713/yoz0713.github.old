@@ -12,7 +12,7 @@
   right: 0;
   left: 0;
   margin: auto;
-  height: 100vh;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   top: 0;
