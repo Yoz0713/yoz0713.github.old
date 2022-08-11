@@ -59,12 +59,12 @@
 }
 .third-page .forestDiv1 {
   position: absolute;
-  width: 25vw;
-  height: 8vw;
-  filter: invert(0.8);
+  width: 40vw;
+  height: 13vw;
+  filter: invert(0.4);
   margin: auto;
-  top: 50vh;
-  left: 14vw;
+  top: 57vh;
+  left: 20vw;
   transform: rotateY(180deg);
 }
 .third-page .forestDiv1 .birdDiv-1 {
@@ -613,13 +613,13 @@
   }
   .third-page .forestDiv1 {
     position: absolute;
-    width: 25vw;
-    height: 8vw;
-    filter: invert(0.8);
+    width: 40vw;
+    height: 14vw;
+    filter: invert(0.4);
     margin: auto;
-    top: 35vw;
-    left: 27vw;
-    transform: rotateY(180deg) scale(2);
+    top: 40vw;
+    left: 35vw;
+    transform: rotateY(180deg) scale(2.8);
   }
   .third-page .forestDiv1 .birdDiv-1 {
     position: absolute;
