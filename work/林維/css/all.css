@@ -674,8 +674,9 @@
     background-color: #F8F9F8;
     background-image: url(../元件/手機板/1x/s2_ph_bg.png);
     background-position: center bottom;
-    background-size: 100% 90%;
-    padding: 10vh 10vw 0;
+    background-size: 100% 100%;
+    padding: 1vw 10vw 0;
+    height: 700px;
   }
   .second-page-left {
     text-align: left;
@@ -699,10 +700,13 @@
     width: 32vw;
     margin-right: 6vw;
   }
+  .third-page {
+    height: 730px;
+  }
   .third-page-box {
     position: absolute;
     right: 10vw;
-    top: 30vh;
+    top: 55vw;
   }
   .third-page-box :nth-child(3) {
     width: 6.5vw;
@@ -717,6 +721,9 @@
     width: 32vw;
     margin-right: 6vw;
     margin-top: 1.5vw;
+  }
+  .forth-page {
+    height: 780px;
   }
   .forth-page-left {
     width: 100%;
@@ -774,6 +781,9 @@
   }
   .forth-page-right-bottom img {
     width: 5vw;
+  }
+  .fifth-page {
+    height: 780px;
   }
   .fifth-page-left {
     width: 100%;
@@ -833,6 +843,9 @@
   .fifth-page-right-bottom img {
     width: 5vw;
   }
+  .sixth-page {
+    height: 730px;
+  }
   .sixth-page-top {
     display: flex;
     flex-direction: column;
@@ -886,6 +899,9 @@
   .sixth-page-bottom :not(:last-child) {
     padding-bottom: 1vw;
   }
+  .seventh-page {
+    height: 830px;
+  }
   .seventh-page-left {
     padding: 20vh 5vw 0;
   }
@@ -903,6 +919,9 @@
     width: 15vw;
     margin-right: 10vw;
     order: 2;
+  }
+  .eighth-page {
+    height: 780px;
   }
   .eighth-page .bg {
     position: absolute;

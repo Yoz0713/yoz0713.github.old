@@ -681,8 +681,9 @@
             background-color: #F8F9F8;
             background-image: url(../元件/手機板/1x/s2_ph_bg.png);
             background-position:center bottom;
-            background-size: 100% 90%;
-            padding:10vh 10vw 0;
+            background-size: 100% 100%;
+            padding:1vw 10vw 0;
+            height: 700px;
             &-left{
                 text-align: left;
                 width: 25%;
@@ -708,11 +709,11 @@
             }
         }
         .third-page{
- 
+            height: 730px;
             &-box{
                 position: absolute;
                 right: 10vw;
-                top: 30vh;
+                top: 55vw;
                 & :nth-child(3){
                     width: 6.5vw;
                 }
@@ -730,6 +731,7 @@
             }
         }
         .forth-page{
+            height: 780px;
             &-left{
                 width: 100%;
                 height: 25%;
@@ -791,6 +793,7 @@
             }
         }
         .fifth-page{
+            height: 780px;
             &-left{
                 width: 100%;
                 height: 25%;
@@ -853,6 +856,7 @@
             }
         }
         .sixth-page{
+            height: 730px;
             &-top{
                 display: flex;
                 flex-direction: column;
@@ -909,6 +913,7 @@
             }
         }
         .seventh-page{
+            height: 830px;
             &-left{
                 padding: 20vh 5vw 0;
                 & :nth-child(2){
@@ -930,6 +935,7 @@
             }
         }
         .eighth-page{
+            height: 780px;
             .bg{
                 position: absolute;
                 bottom: 25vw;
