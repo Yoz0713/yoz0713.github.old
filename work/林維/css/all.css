@@ -670,6 +670,9 @@
   }
 }
 @media all and (max-width: 920px) and (max-width: 420px) {
+  .first-page {
+    height: 240vw;
+  }
   .second-page {
     background-color: #F8F9F8;
     background-image: url(../元件/手機板/1x/s2_ph_bg.png);
@@ -965,6 +968,9 @@
   }
 }
 @media all and (max-width: 920px) and (max-width: 420px) and (max-width: 380px) {
+  .first-page {
+    height: 200vw;
+  }
   .forth-page-left {
     width: 100%;
     height: 20%;
