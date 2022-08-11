@@ -6,7 +6,6 @@
     overflow: hidden;
     img{
         width: 100%;
-
         height: 100%;
         object-fit:cover;
  
@@ -56,6 +55,192 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
+    /*---------------- 鳥動態 -----------------*/
+.forestDiv1{
+    position: absolute;
+    width: 25vw;
+    height: 8vw;
+    filter: invert(0.8);
+    margin: auto;
+    top: 45vh;
+    left: 14vw;
+    transform: rotateY(180deg);
+    .birdDiv-1 {
+        position: absolute;
+        bottom: 50%;
+        right: 40%;
+        width: 5%;
+        animation: birdFlyAni_1 3s infinite linear;
+    }
+    
+    .birdDiv-2 {
+        position: absolute;
+        bottom: 50%;
+        right: 30%;
+        width: 5%;
+        animation: birdFlyAni_2 3s infinite linear 1s;
+        opacity: 0;
+    }
+    
+    .birdDiv-3 {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        width: 4%;
+        animation: birdFlyAni_3 3s infinite linear 1s;
+        opacity: 0;
+    }
+    
+    .birdDiv-4 {
+        position: absolute;
+        bottom: 50%;
+        right: 40%;
+        width: 4%;
+        animation: birdFlyAni_4 3s infinite linear 1.5s;
+        opacity: 0;
+    }
+    
+}
+.forestDiv2{
+    position: absolute;
+    width: 25vw;
+    height: 8vw;
+    filter: invert(0.8);
+    margin: auto;
+    top: 42vh;
+    left: 35vw;
+    transform: rotateY(180deg) 
+    scale(1.5,0.7);
+
+    .birdDiv-1 {
+        position: absolute;
+        bottom: 50%;
+        right: 40%;
+        width: 5%;
+       
+        animation: birdFlyAni_1 3s infinite linear;
+    }
+    
+    .birdDiv-2 {
+        position: absolute;
+        bottom: 50%;
+        right: 30%;
+        width: 5%;
+        animation: birdFlyAni_2 3s infinite linear 1s;
+        opacity: 0;
+    }
+    
+    .birdDiv-3 {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        width: 4%;
+        animation: birdFlyAni_3 3s infinite linear 1s;
+        opacity: 0;
+    }
+    
+    .birdDiv-4 {
+        position: absolute;
+        bottom: 50%;
+        right: 40%;
+        width: 4%;
+        animation: birdFlyAni_4 3s infinite linear 1.5s;
+        opacity: 0;
+    }
+    
+}
+
+
+@keyframes birdFlyAni_3 {
+    0% {
+        opacity: 0;
+        bottom: 50%;
+        transform: rotate(-10deg) scale(1),
+    
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        bottom: 130%;
+        right: 55%;
+        transform: rotate(-30deg) scale(0.8);
+        opacity: 0;
+    }
+}
+
+@keyframes birdFlyAni_4 {
+    0% {
+        opacity: 0;
+        bottom: 60%;
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        bottom: 110%;
+        right: 45%;
+        transform: rotate(-20deg) scale(0.8);
+        opacity: 0;
+    }
+}
+
+.bird {
+    animation: birdSwing 1s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes birdFlyAni_1 {
+    0% {
+        opacity: 0;
+        bottom: 50%;
+        transform: rotate(-10deg) scale(1);
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        bottom: 130%;
+        right: 50%;
+        transform: rotate(-30deg) scale(0.8);
+        opacity: 0;
+    }
+}
+
+@keyframes birdFlyAni_2 {
+    0% {
+        opacity: 0;
+        bottom: 60%;
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        bottom: 110%;
+        right: 35%;
+        transform: rotate(-20deg) scale(0.8);
+        opacity: 0;
+    }
+}
+
+@keyframes birdSwing {
+    0% {
+        transform: rotate(0deg) skewX(0deg) skewY(0deg);
+    }
+
+    100% {
+        transform: rotate(10deg) skewX(10deg) skewY(5deg);
+    }
+}
     &-box{
         display: flex;
         align-items: flex-start;
@@ -373,7 +558,101 @@
     .third-page{
         width: 100%;
         height: 100vh;
-        background-image: url(../元件/手機板/1x/s3_ph_bg.png);
+        background-image: url(../元件/手機板/1x/s3_bg_ph_1_new.jpg);
+        .forestDiv1{
+            position: absolute;
+            width: 25vw;
+            height: 8vw;
+            filter: invert(0.8);
+            margin: auto;
+            top: 35vw;
+            left: 27vw;
+            transform: rotateY(180deg)
+             scale(2);
+            .birdDiv-1 {
+                position: absolute;
+                bottom: 50%;
+                right: 40%;
+                width: 5%;
+                animation: birdFlyAni_1 3s infinite linear;
+            }
+            
+            .birdDiv-2 {
+                position: absolute;
+                bottom: 50%;
+                right: 30%;
+                width: 5%;
+                animation: birdFlyAni_2 3s infinite linear 1s;
+                opacity: 0;
+            }
+            
+            .birdDiv-3 {
+                position: absolute;
+                bottom: 50%;
+                right: 50%;
+                width: 4%;
+                animation: birdFlyAni_3 3s infinite linear 1s;
+                opacity: 0;
+            }
+            
+            .birdDiv-4 {
+                position: absolute;
+                bottom: 50%;
+                right: 40%;
+                width: 4%;
+                animation: birdFlyAni_4 3s infinite linear 1.5s;
+                opacity: 0;
+            }
+            
+        }
+        .forestDiv2{
+            position: absolute;
+            width: 20vw;
+            height: 8vw;
+            filter: invert(0.8);
+            margin: auto;
+            top: 30vw;
+            left: 60vw;
+            transform: rotateY(180deg) 
+            scale(4,1.9);
+        
+            .birdDiv-1 {
+                position: absolute;
+                bottom: 50%;
+                right: 40%;
+                width: 5%;
+               
+                animation: birdFlyAni_1 3s infinite linear;
+            }
+            
+            .birdDiv-2 {
+                position: absolute;
+                bottom: 50%;
+                right: 30%;
+                width: 5%;
+                animation: birdFlyAni_2 3s infinite linear 1s;
+                opacity: 0;
+            }
+            
+            .birdDiv-3 {
+                position: absolute;
+                bottom: 50%;
+                right: 50%;
+                width: 4%;
+                animation: birdFlyAni_3 3s infinite linear 1s;
+                opacity: 0;
+            }
+            
+            .birdDiv-4 {
+                position: absolute;
+                bottom: 50%;
+                right: 40%;
+                width: 4%;
+                animation: birdFlyAni_4 3s infinite linear 1.5s;
+                opacity: 0;
+            }
+            
+        }
         &-box{
             position: absolute;
             right: 15vw;
