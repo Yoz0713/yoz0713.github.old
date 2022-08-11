@@ -850,8 +850,9 @@
     width: 45vw;
   }
   .fifth-page-right-bottom {
+    display: flex;
+    align-items: flex-end;
     order: -1;
-    display: block;
     padding: 5vh 10vw;
     width: 100%;
     height: 20%;
@@ -1160,13 +1161,13 @@
   }
   .fifth-page-right-bottom {
     order: -1;
-    display: block;
     padding: 11vw 10vw;
     width: 30%;
-    height: 20%;
+    height: 100%;
   }
   .fifth-page-right-bottom img {
-    width: 5vw;
+    width: 4vw;
+    margin-bottom: 8vw;
   }
   .sixth-page {
     height: 730px;
