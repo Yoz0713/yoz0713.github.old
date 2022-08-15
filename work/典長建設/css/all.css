@@ -295,7 +295,7 @@
             background-clip: text;
     -webkit-animation-name: glowF;
     -webkit-animation-duration: 3s;
-    background-size: 200% 100%;
+    -webkit-background-size: 200% 100%;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     z-index: 20;
