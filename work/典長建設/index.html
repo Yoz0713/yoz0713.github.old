@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>典長</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="first-page">
+        <div class="first-page-logo">
+            <div class="first-page-logo-box">
+                <img src="./元件/SVG/logo.svg" alt="logo" class="logo">
+            </div>
+         
+        </div>
+        <div class="first-page-title">
+            <div class="first-page-title-box">
+                <div class="first-page-title-box-inner1 ani4">
+                    <div class="h2">
+                        <h2>MI CASA SU CASA</h2>
+                    </div>
+                  
+            
+                </div>
+                <div class="first-page-title-box-inner2">
+                    <img src="./元件/SVG/title.svg" class="ani3"  alt="">
+                </div>
+            
+          
+                <div class="first-page-title-box-inner ani2">
+                    <img src="./元件/SVG/北長建設.svg" alt="北長建設">
+                    <img src="./元件/SVG/客服專線.svg" alt="專線">
+                </div>
+              
+                <img src="./元件/SVG/官網建置中.svg" alt="建置中" class="ani2">
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        // let fe = document.querySelector("feDisplacementMap");
+        // setTimeout(()=>{
+        //     let gg = gsap.timeline();
+        //     gg.fromTo(".ani3",{
+        //         opacity:0
+        //     },{
+        //         opacity:1,
+        //         duration:0.7,
+        //         delay:5
+        //     })
+        //     let timer = setInterval(()=>{
+        //     fe.scale.baseVal -=20
+        //     if(fe.scale.baseVal == 0){
+        //         clearInterval(timer)
+        //     }
+        // },70)
+        // },3000)
+       
+        function animate(){
+            if(window.innerWidth >= 480){
+            let gg = gsap.timeline();
+            gg.fromTo(".logo",{
+                opacity:0,
+                x:-50
+            },{
+                opacity:1,
+                x:0,
+                duration:2.5,
+                delay:2
+            }).fromTo(".ani2",{
+                opacity:0,
+              
+            },{
+                opacity:1,
+                duration:2,
+            },"<+1").fromTo(".ani3",{
+                opacity:0,
+       
+                x:"-5%",
+                skewX:"25deg"
+            },{
+                x:0,
+          
+                opacity:1,
+                skewX:"0deg",
+                duration:1.5
+            },"<+1").fromTo(".ani4",{
+                opacity:0,
+            },{
+                opacity:1,
+                duration:1.5
+            },"<")
+            let gg2 = gsap.timeline();
+            gg2.to(".h2",{
+                
+                duration:3,
+                repeat:-1
+            })
+            
+            }else{
+                let gg = gsap.timeline();
+            gg.fromTo(".logo",{
+                opacity:0,
+                y:50
+            },{
+                opacity:1,
+                y:0,
+                duration:2.5,
+          
+            }).fromTo(".ani2",{
+                opacity:0,
+                y:50
+            },{
+                y:0,
+                opacity:1,
+                duration:2,
+            },"<+1").fromTo(".ani3",{
+                opacity:0,
+                x:"-100%",
+                width:0,
+                skewX:"35deg"
+            },{
+                width:"85vw",
+                x:0,
+                opacity:1,
+                skewX:"0deg",
+                duration:1.5
+            },"<+1").fromTo(".ani4",{
+                opacity:0,
+            },{
+                opacity:1,
+                duration:1.5
+            },"<")
+            }
+           
+        }
+        animate()
+    </script>
+</body>
+</html>
