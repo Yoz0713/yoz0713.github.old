@@ -38,6 +38,15 @@
   position: absolute;
   right: -2.7vw;
   top: 0;
+  filter: drop-shadow(0 0 30px #fff);
+  -webkit-animation-name: bling;
+          animation-name: bling;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 .first-page-logo-box::after {
   content: "";
@@ -99,6 +108,7 @@
           animation-name: glow;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
+  filter: drop-shadow(0 0 30px #fff);
   background-size: 200% 100%;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
@@ -191,6 +201,28 @@
   100% {
     top: 0vw;
     height: 16vw;
+  }
+}
+@-webkit-keyframes bling {
+  0% {
+    filter: drop-shadow(0 0 0px #fff);
+  }
+  50% {
+    filter: drop-shadow(0 0 30px #fff);
+  }
+  100% {
+    filter: drop-shadow(0 0 0px #fff);
+  }
+}
+@keyframes bling {
+  0% {
+    filter: drop-shadow(0 0 0px #fff);
+  }
+  50% {
+    filter: drop-shadow(0 0 30px #fff);
+  }
+  100% {
+    filter: drop-shadow(0 0 0px #fff);
   }
 }
 @media all and (max-width: 480px) {

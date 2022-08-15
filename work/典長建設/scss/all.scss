@@ -33,7 +33,11 @@
                 position: absolute;
                 right: -2.7vw;
                 top: 0;
-            
+                filter: drop-shadow(0 0 30px #fff);
+                animation-name: bling;
+                animation-duration: 5s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
             }
             &::after{
                 content: "";
@@ -46,7 +50,8 @@
                 top: 0vw;
                 animation-name: flow;
                 animation-duration: 2s;
-                animation-timing-function: linear
+                animation-timing-function: linear;
+        
             }
          
         }
@@ -89,7 +94,7 @@
                             background-clip: text;
                             animation-name: glow;
                             animation-duration: 3s;
-                       
+                            filter: drop-shadow(0 0 30px #fff);
                             background-size: 200% 100%;
                             animation-timing-function: linear;
                             animation-iteration-count: infinite;
@@ -167,6 +172,17 @@
 
         top:0vw;
         height: 16vw;
+    }
+}
+@keyframes bling{
+    0%{
+        filter: drop-shadow(0 0 0px #fff);
+    }
+    50%{
+        filter: drop-shadow(0 0 30px #fff);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px #fff);
     }
 }
 @media all and (max-width:480px){

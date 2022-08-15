@@ -113,7 +113,7 @@
             }).to(".star",{
                 x:"-5vw",
                 durate:2,
-                rotation:"-360",
+                rotation:"-540",
                 delay:2
             },"<-0.3")
             }else{
@@ -150,7 +150,18 @@
                 opacity:1,
                 duration:1.5
             },"<")
+            let gg2 =gsap.timeline();
+            gg2.fromTo(".star",{
+                x:"-50vw",
+                y:"-50vw"
+            },{
+                x:0,
+                y:0,
+                duration:1.5,
+                rotation:"720"
+            })
             }
+       
            
         }
         animate()
