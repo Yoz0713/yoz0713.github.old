@@ -62,7 +62,7 @@
   align-items: center;
 }
 .first-page-title-box-inner1 {
-  width: 21vw;
+  width: 25vw;
   margin-top: 5vw;
   position: relative;
   margin-bottom: 1vw;
@@ -77,7 +77,7 @@
 .first-page-title-box-inner1 .h2 h2 {
   font-size: 2.4vw;
   color: transparent;
-  font-family: "Tajawal", sans-serif;
+  font-family: "Tenor Sans", sans-serif;
   font-weight: 500;
 }
 .first-page-title-box-inner1 .h2 h2::after {
@@ -85,13 +85,13 @@
   position: absolute;
   left: 0vw;
   top: 0;
-  background-image: linear-gradient(65deg, rgb(255, 255, 255) 5%, transparent 0%, transparent 48%, transparent 75%);
+  background-image: linear-gradient(65deg, rgba(255, 255, 255, 0.088) 1%, rgba(255, 255, 255, 0.3) 3%, rgba(255, 255, 255, 0.508) 5%, rgba(255, 255, 255, 0.704) 7%, #fff 9%, rgba(255, 255, 255, 0.704) 11%, rgba(255, 255, 255, 0.508) 13%, rgba(255, 255, 255, 0.3) 15%, transparent 0%, transparent 48%, transparent 75%);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-animation-name: glow;
           animation-name: glow;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   background-size: 200% 100%;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
@@ -188,6 +188,7 @@
 }
 @media all and (max-width: 480px) {
   .first-page {
+    height: 900px;
     background-image: url(../元件/1x/bg_ph-100.jpg);
     flex-direction: column;
     padding: 35vw 12vw 60vw;
@@ -217,13 +218,13 @@
   .first-page-title-box {
     display: flex;
     flex-direction: column;
-    margin-top: 20vw;
+    margin-top: 4vw;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
   }
   .first-page-title-box-inner1 {
-    width: 55vw;
+    width: 58vw;
     margin-top: 4.5vw;
     margin-bottom: 2.5vw;
     margin-right: 0vw;
@@ -262,7 +263,7 @@
     width: 70vw;
     margin: 0;
     padding-left: 0vw;
-    border-left: 1px solid #fff;
+    border-left: none;
     margin-bottom: 5vw;
   }
   .first-page-title-box-inner::after {
@@ -281,6 +282,9 @@
   }
 }
 @media all and (max-width: 480px) and (max-width: 380px) {
+  .first-page {
+    height: 700px;
+  }
   .first-page-title-box {
     margin-top: 45vw;
   }
