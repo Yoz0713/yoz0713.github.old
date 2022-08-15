@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 .first-page {
   background-image: url(../元件/1x/bg-100.jpg);
   background-repeat: no-repeat;
