@@ -109,6 +109,7 @@
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   filter: drop-shadow(0 0 30px #fff);
+  -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
   background-size: 200% 100%;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
@@ -230,7 +231,7 @@
     height: 900px;
     background-image: url(../元件/1x/bg_ph-100.jpg);
     flex-direction: column;
-    padding: 35vw 12vw 60vw;
+    padding: 28vw 12vw 60vw;
   }
   .first-page-logo {
     width: 100%;
@@ -270,10 +271,6 @@
     margin-top: 4.5vw;
     margin-bottom: 2.5vw;
     margin-right: 0vw;
-  }
-  .first-page-title-box-inner1 .h2 {
-    -webkit-animation-duration: 100s;
-            animation-duration: 100s;
   }
   .first-page-title-box-inner1 .h2 h2 {
     font-size: 6vw;

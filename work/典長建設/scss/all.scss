@@ -95,6 +95,7 @@
                             animation-name: glow;
                             animation-duration: 3s;
                             filter: drop-shadow(0 0 30px #fff);
+                            -webkit-filter: drop-shadow( 2px 2px 4px rgba(0,0,0,.4) );
                             background-size: 200% 100%;
                             animation-timing-function: linear;
                             animation-iteration-count: infinite;
@@ -190,7 +191,7 @@
         height: 900px;
         background-image: url(../元件/1x/bg_ph-100.jpg);
         flex-direction: column;
-        padding: 35vw 12vw 60vw;
+        padding: 28vw 12vw 60vw;
         &-logo{
             width: 100%;
             height: 30%;
@@ -230,7 +231,7 @@
                     margin-bottom: 2.5vw;
                     margin-right: 0vw;
                     .h2{
-                        animation-duration: 100s;
+                   
                         h2{
                             font-size: 6vw;
                         }
