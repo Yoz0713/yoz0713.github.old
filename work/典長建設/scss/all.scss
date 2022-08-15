@@ -94,8 +94,7 @@
                             background-clip: text;
                             animation-name: glow;
                             animation-duration: 3s;
-                            filter: drop-shadow(0 0 30px #fff);
-                            -webkit-filter: drop-shadow( 2px 2px 4px rgba(0,0,0,.4) );
+                            filter: drop-shadow(0 0 50px #fff);
                             background-size: 200% 100%;
                             animation-timing-function: linear;
                             animation-iteration-count: infinite;
@@ -234,6 +233,10 @@
                    
                         h2{
                             font-size: 6vw;
+                            &::after{
+                                filter: none;
+                               
+                            }
                         }
                     }
                 }

@@ -108,8 +108,7 @@
           animation-name: glow;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  filter: drop-shadow(0 0 30px #fff);
-  -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(0 0 50px #fff);
   background-size: 200% 100%;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
@@ -274,6 +273,9 @@
   }
   .first-page-title-box-inner1 .h2 h2 {
     font-size: 6vw;
+  }
+  .first-page-title-box-inner1 .h2 h2::after {
+    filter: none;
   }
   .first-page-title-box :nth-child(2) {
     width: 85vw;
