@@ -15,7 +15,8 @@
     <div class="first-page">
         <div class="first-page-logo">
             <div class="first-page-logo-box">
-                <img src="./元件/SVG/logo.svg" alt="logo" class="logo">
+                <img src="./元件/SVG/logo_new.svg" alt="logo" class="logo">
+                <img src="./元件/SVG/star.svg" class="star">
             </div>
          
         </div>
@@ -102,7 +103,19 @@
                 duration:3,
                 repeat:-1
             })
-            
+            let gg3 = gsap.timeline();
+            gg3.fromTo(".star",{
+                y:"-10vw"
+            },{
+                y:0,
+                duration:1.8,
+                delay:1
+            }).to(".star",{
+                x:"-5vw",
+                durate:2,
+                rotation:"-360",
+                delay:2
+            },"<-0.3")
             }else{
                 let gg = gsap.timeline();
             gg.fromTo(".logo",{
