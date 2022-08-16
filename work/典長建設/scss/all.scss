@@ -6,6 +6,7 @@
 }
 a{
     text-decoration: none;
+
 }
 .first-page{
     background-image: url(../元件/1x/bg-100.jpg);
@@ -15,7 +16,7 @@ a{
     width: 100vw;
     height: 100vh;
     background-color: rgb(60, 60, 200);
-    padding: 10vw 7vw;
+    padding: 10vw 6vw;
     &-logo{
         display: flex;
         justify-content: center;
@@ -86,7 +87,7 @@ a{
                     width: 100%;
                     position: relative;
                     h2{
-                        font-size: 2.4vw;
+                        font-size: 2.2vw;
                         color: transparent;
                         font-family: 'Tenor Sans', sans-serif;
                         font-weight: 500;
@@ -94,9 +95,10 @@ a{
                         &::after{
                             content:"MI CASA SU CASA";
                             position: absolute;
+                            color: transparent;
                             left: 0.5vw;
                             top: 0;
-                            background-image: linear-gradient(65deg,rgba(255, 255, 255, 0.088) 1%,rgba(255, 255, 255, 0.3) 3%,rgba(255, 255, 255, 0.508) 5%,rgba(255, 255, 255, 0.704) 7%,#fff 9%, rgba(255, 255, 255, 0.704) 11%,rgba(255, 255, 255, 0.508) 13%,rgba(255, 255, 255, 0.3) 15%,transparent 0%,transparent 48%,transparent 75%);
+                            background-image: linear-gradient(65deg,rgba(255, 255, 255, 0.088) 0%,rgba(255, 255, 255, 0.3) 3%,rgba(255, 255, 255, 0.508) 5%,rgba(255, 255, 255, 0.704) 7%,#fff 9%, rgba(255, 255, 255, 0.704) 11%,rgba(255, 255, 255, 0.508) 13%,rgba(255, 255, 255, 0.3) 15%,transparent 0%,transparent 48%,transparent 75%);
                             background-clip: text;
                             animation-name: glow;
                             animation-duration: 3s;
@@ -116,13 +118,37 @@ a{
                
             }
             &-inner2{
+                position: relative;
                 width: 55vw;
                 margin-bottom: 2vw;
                 margin-right: 1vw;
                 text-align: left;
+                &::after{
           
+                    width:60vw;
+                    content:"台中經典，新銳再獻";
+                    position: absolute;
+                    left: -0.7vw;
+                    top: -1.4vw;
+                    font-weight: 700;
+                    font-size: 6.2vw;
+                    color: transparent;
+                    background-image: linear-gradient(65deg,rgba(255, 255, 255, 0.508) 0%,rgba(255, 255, 255,0.704) 7%,#fff 9%, rgba(2255, 255, 255,0.704) 11%,rgba(255, 255, 255, 0.508) 13%,rgba(255, 255, 255, 0.3) 15%,transparent 0%,transparent 48%,transparent 75%);
+                    background-clip: text;
+                    animation-name: glow2;
+                    animation-duration: 3s;
+                 
+                    background-size: 0%;
+                    animation-timing-function: linear;
+                    animation-iteration-count: 1;
+                    animation-delay: 5.5s;
+                    animation-fill-mode: forwards;
+                    z-index: 20;
+  
+                }
               
                 img{
+              
                     width: 55vw;
              
                 }
@@ -163,6 +189,19 @@ a{
     100%{
         background-position: -100% 0;
         background-image: none;
+    }
+}
+@keyframes glow2{
+    0% {
+        background-size: 200% 100%;
+        background-position: 0 0;
+    }
+    30% {
+        background-position: -100% 0;
+    }
+    100%{
+        background-position: -100% 0;
+      
     }
 }
 @keyframes flow{
