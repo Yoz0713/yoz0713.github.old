@@ -10,6 +10,7 @@ a {
 }
 
 .first-page {
+  overflow: hidden;
   background-image: url(../元件/1x/bg-100.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
