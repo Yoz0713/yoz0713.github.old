@@ -245,7 +245,7 @@ a {
     }
   }
   .first-page {
-    height: 900px;
+    height: 100vh;
     background-image: url(../元件/1x/bg_ph-100.jpg);
     flex-direction: column;
     padding: 25vw 12vw 60vw;
