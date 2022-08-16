@@ -23,7 +23,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 2.5vw;
   width: 30%;
   height: 100%;
 }
@@ -83,9 +82,9 @@ a {
 }
 .first-page-title-box-inner1 {
   width: 25vw;
-  margin-top: 5vw;
+  margin-top: 0.9vw;
   position: relative;
-  margin-bottom: 1vw;
+  margin-bottom: 1.7vw;
   margin-right: 4vw;
 }
 .first-page-title-box-inner1 .h2 {
@@ -100,11 +99,12 @@ a {
   color: transparent;
   font-family: "Tenor Sans", sans-serif;
   font-weight: 500;
+  margin-left: 0.5vw;
 }
 .first-page-title-box-inner1 .h2 h2::after {
   content: "MI CASA SU CASA";
   position: absolute;
-  left: 0vw;
+  left: 0.5vw;
   top: 0;
   background-image: linear-gradient(65deg, rgba(255, 255, 255, 0.088) 1%, rgba(255, 255, 255, 0.3) 3%, rgba(255, 255, 255, 0.508) 5%, rgba(255, 255, 255, 0.704) 7%, #fff 9%, rgba(255, 255, 255, 0.704) 11%, rgba(255, 255, 255, 0.508) 13%, rgba(255, 255, 255, 0.3) 15%, transparent 0%, transparent 48%, transparent 75%);
   -webkit-background-clip: text;
@@ -231,6 +231,28 @@ a {
     filter: drop-shadow(0 0 0px #fff);
   }
 }
+@-webkit-keyframes bling2 {
+  0% {
+    filter: drop-shadow(0 0 0px #fff);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #fff);
+  }
+  100% {
+    filter: drop-shadow(0 0 0px #fff);
+  }
+}
+@keyframes bling2 {
+  0% {
+    filter: drop-shadow(0 0 0px #fff);
+  }
+  50% {
+    filter: drop-shadow(0 0 15px #fff);
+  }
+  100% {
+    filter: drop-shadow(0 0 0px #fff);
+  }
+}
 @media all and (max-width: 480px) {
   @-webkit-keyframes glowF {
     0% {
@@ -245,14 +267,19 @@ a {
     }
   }
   .first-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
     background-image: url(../元件/1x/bg_ph-100.jpg);
     flex-direction: column;
-    padding: 25vw 12vw 60vw;
+    padding: 0vw 12vw 0vw;
   }
   .first-page-logo {
     width: 100%;
-    height: 30%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .first-page-logo-box {
     width: 46vw;
@@ -265,6 +292,14 @@ a {
     height: 100%;
   }
   .first-page-logo-box .star {
+    -webkit-animation-name: bling2;
+            animation-name: bling2;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     top: 0;
   }
   .first-page-logo-box::after {
@@ -273,12 +308,14 @@ a {
   .first-page-title {
     justify-content: flex-start;
     width: 100%;
-    height: 70%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .first-page-title-box {
     display: flex;
     flex-direction: column;
-    margin-top: 4vw;
+    margin-top: 0vw;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
@@ -351,8 +388,5 @@ a {
 @media all and (max-width: 480px) and (max-width: 380px) {
   .first-page {
     height: 700px;
-  }
-  .first-page-title-box {
-    margin-top: 45vw;
   }
 }

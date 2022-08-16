@@ -20,7 +20,7 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 2.5vw;
+       
         width: 30%;
         height: 100%;
         &-box{
@@ -76,9 +76,9 @@ a{
             align-items: center;
             &-inner1{
                 width: 25vw;
-                margin-top: 5vw;
+                margin-top: 0.9vw;
                 position: relative;
-                margin-bottom: 1vw;
+                margin-bottom: 1.7vw;
                 margin-right: 4vw;
                 .h2{
                     background-image: linear-gradient(135deg,#943c28, rgb(226, 186, 163) 80%);
@@ -90,10 +90,11 @@ a{
                         color: transparent;
                         font-family: 'Tenor Sans', sans-serif;
                         font-weight: 500;
+                        margin-left: 0.5vw;
                         &::after{
                             content:"MI CASA SU CASA";
                             position: absolute;
-                            left: 0vw;
+                            left: 0.5vw;
                             top: 0;
                             background-image: linear-gradient(65deg,rgba(255, 255, 255, 0.088) 1%,rgba(255, 255, 255, 0.3) 3%,rgba(255, 255, 255, 0.508) 5%,rgba(255, 255, 255, 0.704) 7%,#fff 9%, rgba(255, 255, 255, 0.704) 11%,rgba(255, 255, 255, 0.508) 13%,rgba(255, 255, 255, 0.3) 15%,transparent 0%,transparent 48%,transparent 75%);
                             background-clip: text;
@@ -191,6 +192,17 @@ a{
         filter: drop-shadow(0 0 0px #fff);
     }
 }
+@keyframes bling2{
+    0%{
+        filter: drop-shadow(0 0 0px #fff);
+    }
+    50%{
+        filter: drop-shadow(0 0 15px #fff);
+    }
+    100%{
+        filter: drop-shadow(0 0 0px #fff);
+    }
+}
 @media all and (max-width:480px){
     @-webkit-keyframes glowF{
         0% {
@@ -205,13 +217,16 @@ a{
         }
     }
     .first-page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         height: 100vh;
         background-image: url(../元件/1x/bg_ph-100.jpg);
         flex-direction: column;
-        padding: 25vw 12vw 60vw;
+        padding: 0vw 12vw 0vw;
         &-logo{
             width: 100%;
-            height: 30%;
+            height: fit-content;
             &-box{
                 width: 46vw;
                 height: 46vw;
@@ -222,6 +237,10 @@ a{
                     height: 100%;
                 }
                 .star{
+                    animation-name: bling2;
+                    animation-duration: 3s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
                     top: 0;
                 }
                 &::after{
@@ -232,13 +251,13 @@ a{
         }
         &-title{
             justify-content: flex-start;
-   
+            
             width: 100%;
-            height: 70%;
+            height: fit-content;
             &-box{
                 display: flex;
                 flex-direction: column;
-                margin-top: 4vw;
+                margin-top: 0vw;
                 width: 100%;
                 justify-content: flex-start;
                 align-items: center;
@@ -317,8 +336,6 @@ a{
         .first-page{
             height: 700px;
         }
-        .first-page-title-box{
-            margin-top: 45vw;
-        }
+ 
     }
 }
