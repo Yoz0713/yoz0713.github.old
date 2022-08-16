@@ -133,18 +133,18 @@
                 opacity:1,
                 duration:2,
             },"<+1").fromTo(".ani3",{
-                opacity:0,
-                y:50
+              
+                x:-400
             },{
-                y:0,
-                opacity:1,
-                duration:2
-            },"<").fromTo(".ani4",{
-                opacity:0,
+                x:0,
+             
+                duration:0.7
+            },"<+1.5").fromTo(".ani3",{
+                width:"60%",
             },{
-                opacity:1,
+                width:"100%",
                 duration:1.5
-            },"<")
+            },">")
             let gg2 =gsap.timeline();
             gg2.fromTo(".star",{
                 x:"-50vw",
