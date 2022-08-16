@@ -132,33 +132,6 @@ a {
   margin-right: 1vw;
   text-align: left;
 }
-.first-page-title-box-inner2::after {
-  width: 60vw;
-  content: "台中經典，新銳再獻";
-  position: absolute;
-  left: -0.7vw;
-  top: -1.4vw;
-  font-weight: 700;
-  font-size: 6.2vw;
-  color: transparent;
-  background-image: linear-gradient(65deg, rgba(255, 255, 255, 0.508) 0%, rgba(255, 255, 255, 0.704) 7%, #fff 9%, rgba(255, 255, 255, 0.704) 11%, rgba(255, 255, 255, 0.508) 13%, rgba(255, 255, 255, 0.3) 15%, transparent 0%, transparent 48%, transparent 75%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-animation-name: glow2;
-          animation-name: glow2;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  background-size: 0%;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-delay: 5.5s;
-          animation-delay: 5.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  z-index: 20;
-}
 .first-page-title-box-inner2 img {
   width: 55vw;
 }
@@ -374,10 +347,11 @@ a {
     align-items: center;
   }
   .first-page-title-box-inner1 {
-    width: 58vw;
+    width: 100%;
     margin-top: 4.5vw;
     margin-bottom: 2.5vw;
     margin-right: 0vw;
+    text-align: center;
   }
   .first-page-title-box-inner1 .h2 h2 {
     background-image: linear-gradient(65deg, rgba(255, 255, 255, 0.088) 1%, rgba(255, 255, 255, 0.3) 3%, rgba(255, 255, 255, 0.508) 5%, rgba(255, 255, 255, 0.704) 7%, #fff 9%, rgb(255, 255, 255) 11%, rgba(255, 255, 255, 0.508) 13%, rgb(255, 255, 255) 15%, transparent 10%, transparent 48%, transparent 75%);
