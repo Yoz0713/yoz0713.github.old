@@ -104,9 +104,7 @@ main{
                 img{
                 width: 45vw;
                 }
-                span{
-                    top: 42vw;
-                }
+            
             }
         }
     }
@@ -125,7 +123,7 @@ main{
                 }
                 span{
                     top: 17.6vw;
-                    left: 20vw;
+                    right: 6.5vw;
                 }
             }
         }
@@ -170,7 +168,7 @@ main{
                 width: 70vw;
             }
             span{
-                bottom: 15vw;
+                bottom: 1vw;
             }
         }
         &-text2{
@@ -296,14 +294,14 @@ main{
                     margin-bottom: 5vw;
                 }
                 & :nth-child(2){
-                    left: 51vw;
+                    left: auto;
                     top: 61.5vw;
                     width: fit-content;
                     height: fit-content;
     
                 }
                 & :nth-child(4){
-                    left: 51vw;
+                    left: auto;
                     top: 121vw;
                     width: fit-content;
                     height: fit-content;

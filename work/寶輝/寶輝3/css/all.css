@@ -332,9 +332,6 @@ main .third-cut-right-img {
 main .third-cut-right-img img {
   width: 45vw;
 }
-main .third-cut-right-img span {
-  top: 42vw;
-}
 main .forth-cut {
   display: flex;
   width: 100%;
@@ -355,7 +352,7 @@ main .forth-cut-left-img img {
 }
 main .forth-cut-left-img span {
   top: 17.6vw;
-  left: 20vw;
+  right: 6.5vw;
 }
 main .forth-cut-right {
   position: relative;
@@ -400,7 +397,7 @@ main .fifth-cut-img img {
   width: 70vw;
 }
 main .fifth-cut-img span {
-  bottom: 15vw;
+  bottom: 1vw;
 }
 main .fifth-cut-text2 :nth-child(2) {
   margin-top: 2vw;
@@ -521,7 +518,7 @@ main .fifth-cut-text2 :nth-child(2) {
     margin-bottom: 5vw;
   }
   main .forth-cut-left-img :nth-child(2) {
-    left: 51vw;
+    left: auto;
     top: 61.5vw;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -531,7 +528,7 @@ main .fifth-cut-text2 :nth-child(2) {
     height: fit-content;
   }
   main .forth-cut-left-img :nth-child(4) {
-    left: 51vw;
+    left: auto;
     top: 121vw;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -861,6 +858,9 @@ span {
   bottom: 25px;
   color: #fff;
   font-size: 0.8vw;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 input:focus {
