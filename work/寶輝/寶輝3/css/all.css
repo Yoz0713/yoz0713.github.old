@@ -628,7 +628,7 @@ main .fifth-cut-text2 :nth-child(2) {
 }
 .form-input input {
   color: #fff;
-  font-size: 1vw;
+  font-size: 1.5vw;
   padding: 0 1vw;
   width: 26vw;
   background-color: #9A8773;
@@ -731,7 +731,7 @@ main .fifth-cut-text2 :nth-child(2) {
   }
   .form-input input {
     color: #fff;
-    font-size: 1vw;
+    font-size: 3.5vw;
     padding: 5vw 1vw;
     width: 100%;
     background-color: #9A8773;
@@ -877,11 +877,14 @@ input:focus {
   span {
     position: absolute;
     color: #fff;
-    font-size: 0.8vw;
+    font-size: 3.5vw;
   }
   h3 {
     font-weight: 300;
     font-size: 4.5vw;
     margin: 6.5vw 0;
+  }
+  input, textarea {
+    font-size: initial;
   }
 }
