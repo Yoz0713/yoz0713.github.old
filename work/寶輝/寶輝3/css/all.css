@@ -526,6 +526,7 @@ main .fifth-cut-text2 :nth-child(2) {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    right: 2vw;
   }
   main .forth-cut-left-img :nth-child(4) {
     left: auto;
@@ -536,6 +537,7 @@ main .fifth-cut-text2 :nth-child(2) {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    right: 2vw;
   }
   main .forth-cut-right {
     position: relative;
