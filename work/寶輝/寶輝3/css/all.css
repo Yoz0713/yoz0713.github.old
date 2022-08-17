@@ -140,9 +140,9 @@ footer .footer-logo img {
   position: absolute;
   bottom: -10px;
   width: 100%;
-  height: 0;
+  height: 1px;
   opacity: 0;
-  border: 2px solid rgb(229, 240, 246);
+  background-color: #fff;
   transition: 0.5s;
 }
 .contact h5:hover::after {
@@ -152,6 +152,9 @@ footer .footer-logo img {
   display: flex;
   position: relative;
   justify-content: space-between;
+}
+.contact-language .lang {
+  margin-right: 0.5vw;
 }
 .contact-toform h5 {
   font-size: 1.8vw;
