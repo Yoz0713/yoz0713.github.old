@@ -157,7 +157,7 @@ footer .footer-logo img {
   font-size: 1.8vw;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 820px) {
   footer {
     position: fixed;
     bottom: 0;
@@ -212,14 +212,14 @@ footer .footer-logo img {
     margin-left: 3vw;
   }
   .contact-language .lang::after {
-    width: 5vw;
+    width: 80%;
   }
   .contact-toform h5 {
     font-size: 2vw;
   }
   .contact-toform h5::after {
     bottom: 7.5vw;
-    width: 20vw;
+    width: 100%;
   }
 }
 main {
