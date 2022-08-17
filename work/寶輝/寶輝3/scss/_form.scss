@@ -1,0 +1,188 @@
+.form{
+  
+    width: 100%;
+    height:fit-content;
+    background-color: #9A8773;
+    padding: 5vw 10vw;
+    &-input{
+        margin-top: 3vw;
+        width: 60vw;
+       display: flex;
+        flex-wrap: wrap;
+        height: 25vw;
+        input{
+            color: #fff;
+            font-size: 1vw;
+            padding: 0 1vw;
+            width: 26vw;
+            background-color: #9A8773;
+            border: none;
+            border-bottom: 3px solid #fff;
+            height: 3vw;
+            &::placeholder{
+                color: #fff;
+                font-size: 1vw;
+            }
+            &:focus{
+                border:none;
+            }
+            &:nth-child(odd){
+                margin-right: 2vw;
+            }
+       
+        }
+        .message{
+            width: 90%;
+            margin: 3vw 0 0;
+        }
+    }
+    &-check{
+        width: 100%;
+        &-button{
+            position: relative;
+            input{
+               
+                width: 2.5vw;
+                height: 2.5vw;
+    
+                
+            }
+            .custom-check{
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5vw;
+                color: #9A8773;
+                width: 2.5vw;
+                height: 2.5vw;
+                cursor: pointer;
+                background-color: #9A8773;
+                border: 2px solid #fff;
+                position: absolute;
+                left: 0;
+                top: 0.5vw;
+            }
+        
+            p{
+                display: inline-block;
+                margin-left: 2vw;
+                font-size: 1vw;
+                letter-spacing: 0.1vw;
+            }
+            &-checked{
+                background-color: #fff !important;
+            
+            }
+        }
+        .submit{
+            margin: 3vw 0;
+           button{
+            color: #fff;
+            font-size: 1.5vw;
+            background-color: #9A8773;
+            width: 13vw;
+            height: 4vw;
+            padding: 1vw 2vw;
+            border: 2px solid #fff;
+            border-radius: 130px;
+            cursor: pointer;
+            &:hover{
+                background-color: #fff;
+                color: #9A8773;
+            }
+           }
+           
+        }
+    }
+}
+
+@media all and (max-width:820px){
+    .form{
+        height:900px;
+        background-color: #9A8773;
+        padding: 15vw 10vw;
+        h2{
+            font-size:8vw;
+            font-weight: 300;
+        }
+        &-input{
+            margin-top: 3vw;
+            width: 100%;
+           flex-direction: column;
+            flex-wrap:nowrap;
+            justify-content: space-around;
+            height:70vw;
+            input{
+                color: #fff;
+                font-size: 1vw;
+                padding: 5vw 1vw;
+                width:100%;
+                background-color: #9A8773;
+                border: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.615);
+                height: 3vw;
+                &::placeholder{
+                    color: #fff;
+                    font-size: 4vw;
+                }    
+            }
+            .message{
+                width: 100%;
+                margin:0;
+            }
+        }
+        &-check{
+            width: 100%;
+            &-button{
+                display: flex;
+                position: relative;
+                margin: 10vw 0;
+                input{
+                   
+                    width: 2.5vw;
+                    height: 2.5vw;
+                    opacity: 0;
+                    
+                }
+                .custom-check{
+                 
+                    width: 7.8vw;
+                    height: 7.8vw;
+                    border: 1px solid #fff;
+                    position: absolute;
+                    left: 1vw;
+                    top: 0.5vw;
+                }
+              
+                p{
+                    display: inline-block;
+                    margin-left: 8vw;
+                    font-size: 3vw;
+                    line-height: 3vw;
+                    letter-spacing: 0.1vw;
+                }
+               
+            }
+            .submit{
+                margin: 3vw 0;
+               button{
+                color: #fff;
+                font-size: 3vw;
+                font-weight: 600;
+                letter-spacing: 0.5vw;
+                background-color: #9A8773;
+                width: 32vw;
+                height: 9vw;
+                padding: 1vw 2vw;
+                border: 1px solid rgba(255, 255, 255, 0.611);
+                border-radius: 130px;
+                cursor: pointer;
+                &:hover{
+                    background-color: #fff;
+                    color: #9A8773;
+                }
+               }
+               
+            }
+        }
+    }
+}
