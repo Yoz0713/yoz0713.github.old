@@ -41,22 +41,15 @@ function banner2In(){
         duration:6,
     })
 }
-// banner 輪播及進場動畫
-// arrowmove
-// let more = document.getElementsByClassName("readmore")[0];
-// more.onmouseover = function(){
-//     arrowMove()
-// }
-// function arrowMove(){
-//     let gg = gsap.timeline();
-//     gg.to(".arrow",{
-//         keyframes:{
-//             x:[0,60],
-//             x:[-60,3,-3,0]
-//         },
-//         duration:3,
-//         repeat:-1
-//     })
-// }
+// second-page line-grow animation
+let li = document.querySelectorAll(".switchImg li");
 
-// arrowmove
+for(let i = 0 ; i <li.length ; i++){
+    li[i].onclick = function(e){
+        let lineSwitch = document.getElementsByClassName("lineSwitch")[0]
+        lineSwitch.classList.remove("lineSwitch")
+        this.classList.add("lineSwitch")
+    }
+}
+
+// second-page line-grow animation
