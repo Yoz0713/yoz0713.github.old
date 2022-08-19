@@ -362,8 +362,8 @@ footer span {
   margin-left: 0.8vw;
 }
 .home-second-page-bottom-right-para .readmore:hover .arrow {
-  -webkit-animation: arrow 2.5s linear infinite;
-          animation: arrow 2.5s linear infinite;
+  -webkit-animation: arrow 2.5s ease-in-out infinite;
+          animation: arrow 2.5s ease-in-out infinite;
 }
 .home-third-page {
   display: flex;
@@ -469,6 +469,7 @@ footer span {
 }
 .home-third-page-bottom ul .readmore {
   display: flex;
+  cursor: pointer;
   justify-content: flex-end;
   width: 100%;
 }
@@ -480,8 +481,8 @@ footer span {
   margin-left: 1vw;
 }
 .home-third-page-bottom ul .readmore:hover .arrow {
-  -webkit-animation: arrow 2.5s linear infinite;
-          animation: arrow 2.5s linear infinite;
+  -webkit-animation: arrow 2.5s ease-in-out infinite;
+          animation: arrow 2.5s ease-in-out infinite;
 }
 
 .cube {

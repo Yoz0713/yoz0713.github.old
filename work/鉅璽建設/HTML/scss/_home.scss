@@ -206,6 +206,7 @@
                     .lineSwitch{
                         position: relative;
                         p{
+                        
                             color: $gold_color;
                         }
                    
@@ -290,7 +291,7 @@
                             margin-left: 0.8vw;
                         }
                         &:hover .arrow{
-                            animation: arrow 2.5s linear infinite;
+                            animation: arrow 2.5s ease-in-out infinite;
                         }
                        
                     }
@@ -400,6 +401,7 @@
                 }
                 .readmore{
                     display: flex;
+                    cursor: pointer;
                     justify-content: flex-end;
                     width: 100%;
                     h3{
@@ -410,7 +412,7 @@
                         margin-left: 1vw;
                     }
                     &:hover .arrow{
-                        animation: arrow 2.5s linear infinite;
+                        animation: arrow 2.5s ease-in-out infinite;
                     }
                 }
             }
