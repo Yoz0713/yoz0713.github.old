@@ -240,7 +240,7 @@ footer span {
   width: fit-content;
 }
 .home-second-page-bottom-left ul li p {
-  color: #dcb078;
+  color: rgba(220, 177, 120, 0.4980392157);
 }
 .home-second-page-bottom-left ul li p span {
   font-size: 25px;
@@ -275,6 +275,9 @@ footer span {
 }
 .home-second-page-bottom-left ul .lineSwitch {
   position: relative;
+}
+.home-second-page-bottom-left ul .lineSwitch p {
+  color: #dcb078;
 }
 .home-second-page-bottom-left ul .lineSwitch::after {
   display: block;

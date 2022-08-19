@@ -168,7 +168,7 @@
                         position: relative;
                         width: fit-content;
                         p{
-                            color: $gold_color;
+                            color: #dcb1787f;
                             span{
                                 font-size: 25px;
                             }
@@ -205,6 +205,10 @@
                     }
                     .lineSwitch{
                         position: relative;
+                        p{
+                            color: $gold_color;
+                        }
+                   
                         &::after{
                             display: block;
                             content: "";
